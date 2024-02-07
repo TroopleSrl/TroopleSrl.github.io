@@ -1,0 +1,90 @@
+@font-face{
+    font-display:swap;font-family:Qanelas;font-weight:400;
+    src:local("Qanelas"),
+    url(../fonts/qanelas-regular.woff2) format("woff2"),
+    url(../fonts/qanelas-regular.woff) format("woff")
+}
+    
+@font-face{
+    font-display:swap;font-family:SF Mono;font-style:normal;font-weight:300;
+    src:local("SF Mono"),
+    url(../fonts/sf-mono-light.woff2) format("woff2"),
+    url(../fonts/sf-mono-light.woff) format("woff")
+}
+
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth
+}
+
+body {
+    background-color: #0c0c0c;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    margin: auto;
+    text-align: center;
+    font-family: Qanelas;
+    color: white;
+}
+
+.a:hover {
+    color: #83cccc!important;
+    text-decoration: underline!important
+}
+
+a {
+    font-family: SF Mono,SFMono-Regular,Courier New,monospace;
+    letter-spacing: .5px;
+    text-transform: uppercase
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+h2{
+    color: #a4ffff;
+    display: block;
+    font-family: SF Mono;
+    text-transform: uppercase;
+    margin-top: 2em;
+}
+
+h3{
+    color: #a4ffff;
+    display: block;
+    font-family: SF Mono
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: SF Mono;
+    text-transform: uppercase;
+    letter-spacing: .5px;   
+}
+
+.button{
+    margin: 2em 0;
+    display: inline-block;
+    padding: .5em 1em;
+    background-color: rgba(35,37,37,.7);
+    transition: .3s;
+}
+
+.button:hover {
+    font-size: 110%;;
+    border: 1px solid #a4ffff;
+    transition: .3s;
+}
