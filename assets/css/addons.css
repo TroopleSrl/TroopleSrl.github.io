@@ -5,8 +5,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    /* font-size: 1em; */
-    font-size: max(calc(0.8cqw + 0.5em), 1.15rem);
+    font-size: 1.25em;
+    /* font-size: max(calc(0.8cqw + 0.5em), 1.15rem); */
     container-type: size;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
