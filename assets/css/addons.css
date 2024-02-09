@@ -1,0 +1,73 @@
+.card-team .contact-infos{
+    font-family: 'Qanelas';
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* font-size: 1em; */
+    font-size: max(calc(0.8cqw + 0.5em), 1.15rem);
+    container-type: size;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+.contact-infos > div{
+    position: absolute;
+}
+
+.contact-infos .founder{
+    color: #a4ffff;
+    right: 25px;
+    top: 10px;
+    font-size: 80%;
+}
+
+.contact-infos .name{
+    bottom: 40%;
+    left: 25px;
+    font-size: 150%;
+}
+
+.contact-infos .title{
+    bottom: 35%;
+    left: 25px;
+    font-size: 70%;
+    font-weight: bold;
+    font-family: 'Sf Mono';
+}
+
+.contact-infos .email{
+    /* color: #a4ffff; */
+    bottom: 25%;
+    left: 25px;
+    font-size: .9em;
+}
+
+.contact-infos .email a{
+    text-transform: lowercase !important;
+    font-family: 'Qanelas' !important;
+}
+
+.contact-infos .tel {
+    bottom: 19%;
+    left: 25px;
+    font-size: .9em;
+}
+
+.contact-infos .tel img{
+    height: 1.45em;
+    left: -.5em;
+    position: relative;
+}
+
+.card-team .btn-group{
+    height: 8%;
+}
+
+#img_arthur{
+    max-width: 100%;
+}
+
+.card-team{
+    /* height: 100%; */
+}

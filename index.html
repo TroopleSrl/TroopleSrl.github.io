@@ -1,23 +1,834 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/index.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./assets/favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#6C2FE7">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Critical CSS-->
+	
+	
+	<!-- Theme CSS -->
+	<link rel="preload" href="./assets/css/theme.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+	    <link rel="stylesheet" href="./assets/css/theme.min.css">
+	</noscript>
+	<link rel="stylesheet" href="./assets/css/addons.css">
+	
+	
+	<!-- HTML Meta Tags -->
+	<title>Troople Embrace AI to Boost your Efficiency</title>
+	<meta name="description" content="Step into a new era of well-informed decision-making and puzzle solving, leveraging the Data Science potential through the power of AI with Troople.">
+	
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Troople Embrace AI to Boost your Efficiency">
+	<meta property="og:description" content="Step into a new era of well-informed decision-making and puzzle solving, leveraging the Data Science potential through the power of AI with Troople.">
+	<meta property="og:image" content="assets/img/placeholder.jpg">
+	
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="softedge.dev">
+	<meta property="twitter:url" content="">
+	<meta name="twitter:title" content="Troople Embrace AI to Boost your Efficiency">
+	<meta name="twitter:description" content="Step into a new era of well-informed decision-making and puzzle solving, leveraging the Data Science potential through the power of AI with Troople.">
+	<meta name="twitter:image" content="assets/img/placeholder.jpg"></head>
 
-    <title>Troople - Landing</title>
-</head>
 <body>
-    <main>
-        <div>
-            <h1>Troople</h1>
-            <div>EMBRACE A.I. TO BOOST YOUR EFFICIENCY</div>
-        </div>
-        <h2>&lt; Under construction /&gt;</h2>
-        <a class="button" href="mailto:simon.legendre@troople.be">Contact us</a>
-    </main>
-    <footer>
 
-    </footer>
+	<header>
+		<nav class="navbar navbar-expand-sm fixed-top">
+		    <div class="container">
+		
+		        <a class="navbar-brand" href="index.html">
+		            <span class="visually-hidden">Troople</span>
+		            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="30" fill="none" viewBox="0 0 250 50">
+		                <title>Troople</title>
+		                <path fill="#A4FFFF"
+		                    d="M21.77 50H3.27A3.27 3.27 0 0 1 0 46.71c0-.57.16-1.14.44-1.64L25.4 1.64a3.27 3.27 0 0 1 5.66 0L56 45.07A3.29 3.29 0 0 1 53.18 50h-19.3a3.27 3.27 0 0 1-2.82-4.93l2.93-5.1a2.18 2.18 0 0 1 3.77 0l4.83 8.39a1.09 1.09 0 0 0 1.89 0l5.77-10.04a1.1 1.1 0 0 0-.95-1.64h-9.65a2.18 2.18 0 0 1-1.89-3.28L42.6 25a1.1 1.1 0 0 0-.94-1.64H32a2.18 2.18 0 0 1-2.18-2.2c0-.38.1-.76.3-1.09l4.81-8.39a1.1 1.1 0 0 0-.94-1.64H22.46a1.1 1.1 0 0 0-.95 1.64l4.83 8.4a2.19 2.19 0 0 1-1.89 3.28h-9.64a1.1 1.1 0 0 0-.95 1.64l4.82 8.4a2.2 2.2 0 0 1-1.88 3.28H7.15a1.1 1.1 0 0 0-.94 1.64l5.77 10.04a1.09 1.09 0 0 0 1.88 0l4.82-8.4a2.18 2.18 0 0 1 3.78 0l2.94 5.11A3.29 3.29 0 0 1 22.57 50h-.8Z" />
+		                <path fill="#fff"
+		                    d="M87.22 15.3h-6.75v22.4h-4.39V15.3H69.3v-4.17h17.93v4.17Zm15.22 12.71h-4.16v9.68H93.9V11.13h9.92c4.77 0 8.59 3.8 8.59 8.54a8.49 8.49 0 0 1-5.27 7.7l8.7 10.32h-5.23l-8.16-9.68Zm-4.16-3.9h5.53a4.3 4.3 0 0 0 4.2-4.44 4.3 4.3 0 0 0-4.2-4.44H98.3v8.88Zm20.6.3a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.68 13.68 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3c0 7.7-6.1 13.78-13.85 13.78a13.65 13.65 0 0 1-12.8-8.47 13.74 13.74 0 0 1-1.04-5.31Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.47-9.51v-.01Zm9.77 0a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.67 13.67 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3 13.74 13.74 0 0 1-8.54 12.78 13.66 13.66 0 0 1-5.3 1 13.69 13.69 0 0 1-13.85-13.78Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.46-9.51v-.01Zm29.6-4.74c0 4.7-3.82 8.53-8.67 8.53h-5.45v9.5h-4.39V11.12h9.84c4.85 0 8.66 3.8 8.66 8.54Zm-4.4 0a4.3 4.3 0 0 0-4.27-4.44h-5.45v8.88h5.45c2.4 0 4.27-1.97 4.27-4.44Zm26.7 13.85v4.17H212.1V11.13h4.39v22.39h10.67Zm22.32 0v4.17h-15.64V11.13h15.45v4.18h-11.06v6.9h10.1v4.1h-10.1v7.2h11.26Z" />
+		            </svg>
+		        </a>
+		
+		        <button class="d-none navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+		            aria-controls="offcanvasNavbar">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+		
+		        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+		
+		            <div class="offcanvas-header">
+		                <span class="offcanvas-title" id="offcanvasNavbarLabel">Menu</span>
+		                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		            </div>
+		
+		            <div class="offcanvas-body gap-4">
+		
+		                <ul class="navbar-nav ms-auto">
+		
+		                    <li class="nav-item">
+		                        <a class="nav-link" href="#about-us">About us</a>
+		                    </li>
+		
+		                    <li class="nav-item">
+		                        <a class="nav-link" href="#services">Services</a>
+		                    </li>
+		
+		                    <li class="nav-item">
+		                        <a class="nav-link" href="#contact-us">Contact</a>
+		                    </li>
+		
+		                </ul>
+		            </div>
+		
+		        </div>
+		
+		        <div class="shape-trapezoid"></div>
+		
+		    </div>
+		</nav>	</header>
+
+	<main>
+		<!-- Hero -->
+		<section id="hero">
+			<div class="container">
+
+				<div class="row justify-content-center align-items-stretch align-content-center">
+
+					<div class="col-12 col-lg-auto mt-5 mb-2">
+						<h1 class="display-1 vstack text-center text-lg-start mb-5">
+							<span class="visually-hidden">Troople,</span>
+							<span class="me-4 me-lg-0">Embrace A.I.</span>
+							<span class="ms-6 ms-lg-auto me-lg-6">to boost</span>
+							<span>your efficiency</span>
+						</h1>
+					</div>
+
+					<div class="col-12 col-lg-9 col-xl-8 text-center text-lg-start mb-5 mb-lg-0">
+						<p class="lead mb-4 text-white">Filling the knowledge gap is the best way to instill confidence, maximize
+							opportunities and mitigate risks. Step into a new era of well-informed decision-making and puzzle solving,
+							leveraging the Data Science potential.</p>
+
+						<a class="btn btn-secondary2 border-hover-animation" href="mailto:contact@troople.be">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<p class="btn-text mb-0">Contact us</p>
+						</a>
+
+					</div>
+
+					<div class="col-12 col-lg-3 col-xl-4 text-center text-lg-end d-lg-flex flex-lg-column gap-lg-4">
+						<div style="width: 1px;" class="d-none d-lg-flex bg-white ms-auto flex-grow-1"></div>
+						<a href="#about-us" class="text-white x-small">Scroll down<br>to discover more</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About us -->
+		<section id="about-us" class="pt-6 pb-4">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-12">
+						<span class="subtitle">About us</span>
+						<h2 class="display-3">Get started with smart data solutions.</h2>
+					</div>
+				</div>
+			
+				<div class="row row-cols-1 row-cols-md-1 justify-content-center align-items-center align-items-md-stretch py-3">
+					<div class="col-12 col-lg-5">
+						<div class="card card-team h-100 flex-row align-items-center">
+							<div class="ratio">
+								<img id="img_arthur" class="img-fluid" src="assets/img/team/Arthur_Color_Nobg.png" alt="Arthur" style="">
+							</div>
+
+							<div class="contact-infos">
+								<div class="founder">//Co-Founder</div>
+								<div class="name">Arthur Geeraerd</div>
+								<div class="title">Sales & Relations specialist</div>
+								<div class="email"><a href="mailto:arthur.geeraerd@troople.be">// arthur.geeraerd@troople.be</a></div>
+								<div class="tel">// <img src="assets/img/team/Arthur_Phone.png" alt="Téléphone en image"></div>
+							</div>
+	
+							<div class="btn-group border-mask-outline" role="group" aria-label="Arthur">
+								<a href="https://www.linkedin.com/in/arthur-geeraerd-691a6613b/" class="btn btn-white">Arthur</a>
+								<a href="https://www.linkedin.com/in/arthur-geeraerd-691a6613b/" target="_blank"
+									class="btn btn-icon btn-secondary-light">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 16 16">
+										<path fill="currentColor"
+											d="M.29 5.32h3.3v10.62H.29V5.32ZM1.94.04a1.92 1.92 0 1 1 0 3.83 1.92 1.92 0 0 1 0-3.83Zm3.72 5.28h3.17v1.45h.04A3.47 3.47 0 0 1 12 5.06c3.34 0 3.96 2.2 3.96 5.06v5.82h-3.3v-5.16c0-1.24-.03-2.82-1.72-2.82-1.72 0-1.98 1.34-1.98 2.73v5.25h-3.3V5.32Z" />
+									</svg>
+								</a>
+							</div>
+	
+						</div>
+					</div>
+					<div class="col-12 col-lg-7">
+						<div class="card card-team" style="height: 80%;">
+							<div class="card-body p-5">
+								<h4 class="card-title mb-5">Troople provides objectives & comprehensive intelligence using advanced AI technologies.</h4>
+								<p class="lead text-white" style="font-size: 1em;">We empower businesses and decision-makers to make informed
+									strategic decisions,
+									optimize operations, and drive growth in a rapidly evolving digital landscape.</p>
+		
+								<p class="lead text-white" style="font-size: 1em;">Our focus on data marketing, intelligent automation, and
+									visualization enables us
+									to value untapped data, decode complex information sets and present actionable insights for our clients'
+									success.
+								</p>
+							</div>
+						</div>
+						<div class="card card-team" style="height: 19%; margin-top: 1%">
+							<div class="card-body px-5 py-3">
+								<p class="lead text-white" style="line-height: 1.25em">
+									You're a step away from pioneering AI-driven solutions for you business. Connect with us!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+
+		<!-- Our field of work -->
+		<section id="services" class="bg-gradient-black-in-out py-6">
+			<div class="container">
+				<div class="row justify-content-center text-center mb-6">
+					<div class="col-12 col-lg-10 col-xxl-9">
+						<span class="subtitle">Our field of work</span>
+						<h2 class="display-1">From strategy to <br>implementation.</h2>
+						<p>Our dynamic process integrates with your business needs, ensuring alignment and
+							excellence. Operating in agile iterations, we believe in continuous collaboration to deliver optimal
+							results.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row justify-content-center g-4 mb-5">
+					<div class="col-12 col-md-8 col-lg-7 col-xl-4">
+						<div class="card card-service border-mask">
+							<div class="card-body">
+								<span class="number">001</span>
+								<div class="card-header">
+									<h3 class="card-title">Elevating your data marketing</h3>
+									<span class="btn btn-secondary border-mask-outline btn-icon">+</span>
+								</div>
+
+								<div class="card-content">
+									<div>
+										<h4>Data Maturity Audit</h4>
+										<p>Assessing and enhancing data infrastructure</p>
+									</div>
+									<div>
+										<h4>AI Integration</h4>
+										<p>Embracing the power of AI for decision-making</p>
+									</div>
+									<div>
+										<h4>Data Source Strategy</h4>
+										<p>Devising robust strategies for data gathering</p>
+									</div>
+									<div>
+										<h4>Webscraping</h4>
+										<p>Expanding datasets through online data extraction</p>
+									</div>
+									<div>
+										<h4>Data Source Integration</h4>
+										<p>Connecting multiple data sources for a holistic view</p>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="container-video position-absolute" style="z-index: 0;">
+								<video autoplay loop muted>
+									<source src="assets/img/sphere.mp4">
+								</video>
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="col-12 col-md-8 col-lg-7 col-xl-4">
+						<div class="card card-service border-mask">
+							<div class="card-body">
+								<span class="number">002</span>
+								<div class="card-header">
+									<h3 class="card-title">Unleashing Your Intelligent Automation</h3>
+									<span class="btn btn-secondary border-mask-outline btn-icon">+</span>
+								</div>
+
+								<div class="card-content">
+									<div>
+										<h4>Statistical Analysis</h4>
+										<p>Extracting insights through advanced statistics</p>
+									</div>
+									<div>
+										<h4>Process Automation</h4>
+										<p>Streamlining operations through automation</p>
+									</div>
+									<div>
+										<h4>Machine Learning and AI Applications</h4>
+										<p>Leveraging cutting-edge technologies</p>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="container-video position-absolute" style="z-index: 0;">
+								<video autoplay loop muted>
+									<source src="assets/img/triangle.mp4">
+								</video>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-12 col-md-8 col-lg-7 col-xl-4">
+						<div class="card card-service border-mask">
+							<div class="card-body">
+								<span class="number">003</span>
+
+								<div class="card-header">
+									<h3 class="card-title">Decoding & Visualizing Your Data</h3>
+									<span class="btn btn-secondary border-mask-outline btn-icon">+</span>
+								</div>
+
+								<div class="card-content">
+									<div>
+										<h4>Business Solutions</h4>
+										<p>Devising innovative strategies for business success</p>
+									</div>
+									<div>
+										<h4>Lead Acquisition</h4>
+										<p>Optimizing lead acquisition strategies</p>
+									</div>
+									<div>
+										<h4>Data Strategy Formulation</h4>
+										<p>Developing comprehensive data strategies</p>
+									</div>
+									<div>
+										<h4>Data Visualization</h4>
+										<p>Converting complex data into easily understandable formats</p>
+									</div>
+									<div>
+										<h4>Reporting and Implementation</h4>
+										<p>Producing insightful reports and facilitating application development</p>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="container-video position-absolute" style="z-index:0;">
+								<video autoplay loop muted>
+									<source src="assets/img/square.mp4">
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Our tools -->
+		<section id="tools" class="pt-3 pb-6">
+			<div class="container">
+
+				<div class="row g-4 justify-content-center align-items-stretch">
+
+					<div class="col-12 col-lg-10">
+						<div class="scroll-text">
+
+							<!-- Svg -->
+							<div>
+								<!-- Mobile -->
+								<svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="38" height="27" fill="none"
+									viewBox="0 0 38 27">
+									<path fill="#000"
+										d="M0 0h3v3H0zm0 12h3v3H0zm0 12h3v3H0zM5 6h3v3H5zm0 12h3v3H5zm5-18h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-18h3v3h-3zm0 12h3v3h-3zm5-18h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-18h3v3h-3zm0 12h3v3h-3zm5-18h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-18h3v3h-3zm0 12h3v3h-3z" />
+								</svg>
+								<!-- Desktop-->
+								<svg class="d-none d-lg-block" xmlns="http://www.w3.org/2000/svg" width="88" height="51" fill="none"
+									viewBox="0 0 88 51">
+									<path fill="#000"
+										d="M0 0h3v3H0zm0 12h3v3H0zm0 12h3v3H0zm0 12h3v3H0zm0 12h3v3H0zM5 6h3v3H5zm0 12h3v3H5zm0 12h3v3H5zm0 12h3v3H5zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zM50 0h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3z" />
+								</svg>
+							</div>
+
+							<!-- Scrolling text -->
+							<div class="scroll-text-container">
+
+								<p class="scroll-text-01">
+									<span>&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our
+										tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools</span>
+								</p>
+
+								<p class="scroll-text-02">
+									<span>&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our
+										tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools&nbsp;&#x2F;&#x2F;&nbsp;Our tools</span>
+								</p>
+
+							</div>
+
+							<!-- Svg -->
+							<div>
+								<!-- Mobile -->
+								<svg class="d-lg-none" xmlns="http://www.w3.org/2000/svg" width="38" height="27" fill="none"
+									viewBox="0 0 38 27">
+									<path fill="#000"
+										d="M0 0h3v3H0zm0 12h3v3H0zm0 12h3v3H0zM5 6h3v3H5zm0 12h3v3H5zm5-18h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-18h3v3h-3zm0 12h3v3h-3zm5-18h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-18h3v3h-3zm0 12h3v3h-3zm5-18h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-18h3v3h-3zm0 12h3v3h-3z" />
+								</svg>
+								<!-- Desktop-->
+								<svg class="d-none d-lg-block" xmlns="http://www.w3.org/2000/svg" width="88" height="51" fill="none"
+									viewBox="0 0 88 51">
+									<path fill="#000"
+										d="M0 0h3v3H0zm0 12h3v3H0zm0 12h3v3H0zm0 12h3v3H0zm0 12h3v3H0zM5 6h3v3H5zm0 12h3v3H5zm0 12h3v3H5zm0 12h3v3H5zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zM50 0h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm5-42h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3zm0 12h3v3h-3z" />
+								</svg>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-12 col-lg-5">
+						<div class="card card-tool">
+							<div class="card-body">
+								<h3 class="card-title"><span>/>></span> Cloud</h3>
+								<ul class="card-list list-unstyled">
+									<li>Aws //</li>
+									<li>Microsoft Azure //</li>
+									<li>Looker Studio //<span class="typed-blink"></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-lg-5">
+						<div class="card card-tool">
+							<div class="card-body">
+								<h3 class="card-title"><span>/>></span> Data formats</h3>
+								<ul class="card-list list-unstyled">
+									<li>Large language models //</li>
+									<li>Geographic information system data //</li>
+									<li>Images and video //</li>
+									<li>Signal data //</li>
+									<li>Natural language processing //</li>
+									<li>Networks //<span class="typed-blink"></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Our mission -->
+		<section id="mission" class="py-3">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-12 col-lg-10 col-xl-9">
+						<span class="subtitle">Our mission's updates</span>
+						<h2 class="display-5">Achieving your full potential starts with gathering valuable insights through data
+							science, as most data
+							could never be reached in any other way.</h2>
+					</div>
+				</div>
+
+				<div class="vstack gap-4">
+					<div class="card card-mission border-mask">
+						<div class="card-body">
+							<div class="row gx-xl-5">
+								<div class="col-12 col-lg-4">
+									<h3 class="client">Case 001 - Fieldkaired</h3>
+									<h4 class="card-title">Automatic invoice reading & recording.</h4>
+								</div>
+
+								<div class="col-12 col-lg-8 d-flex flex-column">
+									<p class="body-mobile-sm">We designed and implemented an Optical Character Recognition (OCR) solution
+										capable of scanning and
+										interpreting invoices efficiently. This system, deployed on a cloud platform, has dramatically
+										streamlined invoice management operations. As part of this process, we established a comprehensive
+										data architecture to collect , manage and parse the acquired data effectively. Furthermore, we
+										leveraged this data to extract insightful information, transforming seemingly ordinary invoices into
+										valuable resources for business intelligence and decision-making.</p>
+
+									<div class="d-flex align-items-center gap-2 justify-content-between order-lg-first">
+										<span class="date">November 2022<br class="d-md-none"> - Present</span>
+										<span class="status">Mission in <br class="d-md-none">progress</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card card-mission border-mask">
+						<div class="card-body">
+							<div class="row gx-xl-5">
+								<div class="col-12 col-lg-4">
+									<h3 class="client">Case 002 - Allyum</h3>
+									<h4 class="card-title">Driving Business Efficiency through Process Automation & Intelligent Lead
+										Generation</h4>
+								</div>
+
+								<div class="col-12 col-lg-8 d-flex flex-column">
+									<p class="body-mobile-sm">We specialize in the strategic implementation of process automation, Natural
+										Language Processing
+										(NLP), and innovative lead generation techniques. By automating repetitive tasks, we significantly
+										increase operational efficiency. Our utilization of NLP enhances interactions and communication,
+										allowing for a more nuanced understanding of data. Furthermore, our lead generation solutions are
+										tailored to identify and attract the most promising potential customers, thus maximizing conversion
+										rates and business growth.</p>
+
+									<div class="d-flex align-items-center gap-2 justify-content-between order-lg-first">
+										<span class="date">April 2023<br class="d-md-none"> - May 2023</span>
+										<span class="status">Mission<br class="d-md-none"> completed</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- FAQ -->
+		<section id="faq" class="py-6">
+			<div class="container">
+				<div class="row justify-content-center mb-5">
+					<div class="col-12 col-lg-10 col-xxl-8 text-center">
+						<span class="subtitle">Deep dive Faq</span>
+						<h2 class="display-4">Answers to your burning questions.</h2>
+						<p class="lead px-lg-6 px-xl-7 px-xxl-6">Our dynamic process integrates with your business needs, ensuring
+							alignment and excellence. Operating in agile iterations, we believe in continuous collaboration to deliver
+							optimal results.</p>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-10 col-xxl-9">
+
+						<div class="vstack gap-4">
+
+							<div class="card card-faq">
+								<div class="card-body">
+									<div class="hstack justify-content-between align-items-start gap-5">
+										<div>
+											<span class="number">Question 001</span>
+											<h4 class="card-title">How do you utilize AI to derive insights&nbsp;?</h4>
+										</div>
+
+										<button class="btn btn-secondary border-mask-outline btn-icon collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+											aria-controls="collapseOne">
+											<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+												viewBox="0 0 16 16">
+												<path fill-rule="evenodd"
+													d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+											</svg>
+										</button>
+
+									</div>
+									<div class="collapse" id="collapseOne">
+										<p>
+											We employ advanced statistical techniques, machine learning, and AI methodologies to extract
+											insights, build predictive models, and automate systems. We also use data visualization to convert
+											complex data into intuitive, easily digestible formats.
+										</p>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="card card-faq">
+								<div class="card-body">
+									<div class="hstack justify-content-between align-items-start gap-5">
+										<div>
+											<span class="number">Question 002</span>
+											<h4 class="card-title">How does your process ensure alignment with our needs&nbsp;?</h4>
+										</div>
+
+										<button class="btn btn-secondary border-mask-outline btn-icon collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+											aria-controls="collapseTwo">
+											<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+												viewBox="0 0 16 16">
+												<path fill-rule="evenodd"
+													d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+											</svg>
+										</button>
+
+									</div>
+									<div class="collapse" id="collapseTwo">
+										<p>
+											Our process is executed in agile iterations, promoting continuous collaboration with our clients.
+											Our journey typically begins with a Proof of Concept (PoC), which is designed to deliver maximum
+											value with minimal resources and serves as a solid foundation for more customized solutions.
+										</p>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="card card-faq">
+								<div class="card-body">
+									<div class="hstack justify-content-between align-items-start gap-5">
+										<div>
+											<span class="number">Question 003</span>
+											<h4 class="card-title">What specific areas in our business could benefit most from the application
+												of AI&nbsp;?</h4>
+										</div>
+
+										<button class="btn btn-secondary border-mask-outline btn-icon collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+											aria-controls="collapseThree">
+											<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+												viewBox="0 0 16 16">
+												<path fill-rule="evenodd"
+													d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+											</svg>
+										</button>
+
+									</div>
+									<div class="collapse" id="collapseThree">
+										<p>
+											AI can greatly enhance areas like customer service, sales and marketing, operations and logistics,
+											HR management, and decision-making processes by automating tasks, personalizing customer
+											interaction, optimizing logistics, streamlining hiring, and enabling data-driven decisions.
+											Contact us at <a class="body-link link-offset-1" target="_blank"
+												href="mailto:contact@troople.be">contact@troople.be</a>
+											to
+											identify
+											exactly how data can
+											help you&nbsp;!
+										</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="contact-us" class="pt-3 pb-6 bg-gradient-black-in">
+			<div class=" text-center mb-lg-3">
+					<a class="btn btn-secondary2 border-hover-animation" href="mailto:contact@troople.be" target="_blank">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<p class="btn-text mb-0">Contact us</p>
+				</a>				
+			</div>
+		</section>
+
+		<!-- Get started -->
+		<!-- 
+		<section id="contact-us" class="pt-6 pb-3 bg-gradient-black-in">
+			<div class="container">
+				<div class="row justify-content-around align-items-end g-4 mb-5">
+					<div class="col-12 col-lg-9 text-center text-lg-start">
+						<h2 class="display-1">Get started with <br class="d-none d-md-block"> smart data solutions.</h2>
+					</div>
+					<div class="col-12 col-lg-auto text-center mb-lg-3">
+
+						<a class="btn btn-secondary2 border-hover-animation" href="mailto:contact@troople.be" target="_blank">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<p class="btn-text mb-0">Contact us</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		-->
+		<!--
+		<section class="pb-7 bg-black">
+			<div class="container">
+				<h2 class="visually-hidden">Our team</h2>
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+					<div class="col">
+						<div class="card card-team">
+							<div class="ratio">
+								<img class="img-fluid" src="assets/img/team/TRO_TeamPictures_Arthur.jpg" alt="Arthur"
+									style="">
+							</div>
+
+							<div class="btn-group border-mask-outline" role="group" aria-label="Arthur">
+								<a href="https://www.linkedin.com/in/arthur-geeraerd-691a6613b/" class="btn btn-white">Arthur</a>
+								<a href="https://www.linkedin.com/in/arthur-geeraerd-691a6613b/" target="_blank"
+									class="btn btn-icon btn-secondary-light">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 16 16">
+										<path fill="currentColor"
+											d="M.29 5.32h3.3v10.62H.29V5.32ZM1.94.04a1.92 1.92 0 1 1 0 3.83 1.92 1.92 0 0 1 0-3.83Zm3.72 5.28h3.17v1.45h.04A3.47 3.47 0 0 1 12 5.06c3.34 0 3.96 2.2 3.96 5.06v5.82h-3.3v-5.16c0-1.24-.03-2.82-1.72-2.82-1.72 0-1.98 1.34-1.98 2.73v5.25h-3.3V5.32Z" />
+									</svg>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card card-team">
+
+							<div class="ratio">
+								<img class="img-fluid" src="assets/img/team/TRO_TeamPictures_Adrien.jpg" alt="Adrien">
+							</div>
+
+							<div class="btn-group border-mask-outline" role="group" aria-label="Adrien">
+								<a href="https://www.linkedin.com/in/adrienkinart/" target="_blank" class="btn btn-white">Adrien</a>
+								<a href="https://www.linkedin.com/in/adrienkinart/" target="_blank"
+									class="btn btn-icon btn-secondary-light">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 16 16">
+										<path fill="currentColor"
+											d="M.29 5.32h3.3v10.62H.29V5.32ZM1.94.04a1.92 1.92 0 1 1 0 3.83 1.92 1.92 0 0 1 0-3.83Zm3.72 5.28h3.17v1.45h.04A3.47 3.47 0 0 1 12 5.06c3.34 0 3.96 2.2 3.96 5.06v5.82h-3.3v-5.16c0-1.24-.03-2.82-1.72-2.82-1.72 0-1.98 1.34-1.98 2.73v5.25h-3.3V5.32Z" />
+									</svg>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card card-team">
+							<div class="ratio">
+								<img class="img-fluid" src="assets/img/team/TRO_TeamPictures_Simon.jpg" alt="Simon">
+							</div>
+
+							<div class="btn-group border-mask-outline" role="group" aria-label="Simon">
+								<a href="https://www.linkedin.com/in/simon-legendre-600074174/" target="_blank"
+									class="btn btn-white">Simon</a>
+								<a href="https://www.linkedin.com/in/simon-legendre-600074174/" target="_blank"
+									class="btn btn-icon btn-secondary-light">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 16 16">
+										<path fill="currentColor"
+											d="M.29 5.32h3.3v10.62H.29V5.32ZM1.94.04a1.92 1.92 0 1 1 0 3.83 1.92 1.92 0 0 1 0-3.83Zm3.72 5.28h3.17v1.45h.04A3.47 3.47 0 0 1 12 5.06c3.34 0 3.96 2.2 3.96 5.06v5.82h-3.3v-5.16c0-1.24-.03-2.82-1.72-2.82-1.72 0-1.98 1.34-1.98 2.73v5.25h-3.3V5.32Z" />
+									</svg>
+								</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
+	-->
+	</main>
+
+	<footer>
+		<div class="shape-trapezoid"></div>
+	
+		<div class="container">
+	
+			<div class="row justify-content-center justify-content-md-end g-3 g-lg-4 g-xl-3 mb-3">
+	
+				<!-- Logo -->
+				<div class="col-12 col-lg-4 col-xl-5 me-lg-auto text-center text-lg-start">
+					<svg xmlns="http://www.w3.org/2000/svg" width="150" height="30" fill="none" viewBox="0 0 250 50">
+						<title>Troople</title>
+						<path fill="#A4FFFF"
+							d="M21.77 50H3.27A3.27 3.27 0 0 1 0 46.71c0-.57.16-1.14.44-1.64L25.4 1.64a3.27 3.27 0 0 1 5.66 0L56 45.07A3.29 3.29 0 0 1 53.18 50h-19.3a3.27 3.27 0 0 1-2.82-4.93l2.93-5.1a2.18 2.18 0 0 1 3.77 0l4.83 8.39a1.09 1.09 0 0 0 1.89 0l5.77-10.04a1.1 1.1 0 0 0-.95-1.64h-9.65a2.18 2.18 0 0 1-1.89-3.28L42.6 25a1.1 1.1 0 0 0-.94-1.64H32a2.18 2.18 0 0 1-2.18-2.2c0-.38.1-.76.3-1.09l4.81-8.39a1.1 1.1 0 0 0-.94-1.64H22.46a1.1 1.1 0 0 0-.95 1.64l4.83 8.4a2.19 2.19 0 0 1-1.89 3.28h-9.64a1.1 1.1 0 0 0-.95 1.64l4.82 8.4a2.2 2.2 0 0 1-1.88 3.28H7.15a1.1 1.1 0 0 0-.94 1.64l5.77 10.04a1.09 1.09 0 0 0 1.88 0l4.82-8.4a2.18 2.18 0 0 1 3.78 0l2.94 5.11A3.29 3.29 0 0 1 22.57 50h-.8Z" />
+						<path fill="#fff"
+							d="M87.22 15.3h-6.75v22.4h-4.39V15.3H69.3v-4.17h17.93v4.17Zm15.22 12.71h-4.16v9.68H93.9V11.13h9.92c4.77 0 8.59 3.8 8.59 8.54a8.49 8.49 0 0 1-5.27 7.7l8.7 10.32h-5.23l-8.16-9.68Zm-4.16-3.9h5.53a4.3 4.3 0 0 0 4.2-4.44 4.3 4.3 0 0 0-4.2-4.44H98.3v8.88Zm20.6.3a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.68 13.68 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3c0 7.7-6.1 13.78-13.85 13.78a13.65 13.65 0 0 1-12.8-8.47 13.74 13.74 0 0 1-1.04-5.31Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.47-9.51v-.01Zm9.77 0a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.67 13.67 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3 13.74 13.74 0 0 1-8.54 12.78 13.66 13.66 0 0 1-5.3 1 13.69 13.69 0 0 1-13.85-13.78Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.46-9.51v-.01Zm29.6-4.74c0 4.7-3.82 8.53-8.67 8.53h-5.45v9.5h-4.39V11.12h9.84c4.85 0 8.66 3.8 8.66 8.54Zm-4.4 0a4.3 4.3 0 0 0-4.27-4.44h-5.45v8.88h5.45c2.4 0 4.27-1.97 4.27-4.44Zm26.7 13.85v4.17H212.1V11.13h4.39v22.39h10.67Zm22.32 0v4.17h-15.64V11.13h15.45v4.18h-11.06v6.9h10.1v4.1h-10.1v7.2h11.26Z" />
+					</svg>
+				</div>
+	
+				<!-- Newsletter -->
+				<div class="col-12 col-md-6 col-lg-4 text-center text-md-start order-md-1">
+					<form action="#">
+						<label class="form-label" for="#newsletter-field">Subscribe to our
+							newsletter</label>
+						<input type="email" class="form-control text-uppercase" id="#newsletter-field"
+							placeholder="Enter your email address">
+					</form>
+				</div>
+	
+				<!-- Socials -->
+				<div class="col-12 col-md-6 col-lg-3 order-md-2">
+					<ul
+						class="list-unstyled d-flex justify-content-evenly justify-content-md-start gap-5 gap-lg-4 align-items-center">
+						<li><a target="_blank" href="https://www.linkedin.com/company/troople">LN</a></li>
+						<li><a target="_blank" href="https://www.facebook.com/profile.php?id=61550785434703">FB</a></li>
+						<li><a target="_blank" href="https://www.instagram.com/troopledata/">IG</a></li>
+					</ul>
+				</div>
+	
+				<!-- Links -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<ul
+						class="list-unstyled d-flex gap-3 align-items-center justify-content-evenly flex-wrap flex-md-column align-items-md-start">
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">Privacy policy</a></li>
+						<li><a href="contact@troople.be">Contact us</a></li>
+					</ul>
+				</div>
+	
+				<!-- Adress & Cronos -->
+				<div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center align-items-md-start gap-3 order-md-3">
+					<a href="#" class="d-flex justify-content-center text-center d-md-none">
+						Chemin du Cyclotron 6, <br>
+						1348 Louvain-La-Neuve, <br>
+						Wallonie Belgique
+					</a>
+	
+					<a target="_blank" href="">> CONTACT US <</a>
+				</div>
+			</div>
+	
+			<!-- Copyrights -->
+			<div class="row copyright justify-content-between justify-content-lg-end">
+				<div class="col-auto me-lg-auto">
+					<span>© 2024 Troople</span>
+				</div>
+	
+				<div class="col-auto col-lg-3">
+					<span>All rights reserved</span>
+				</div>
+	
+				<div class="col-auto col-lg-4 d-none d-md-block">
+					<a target="_blank">
+						Chemin du Cyclotron 6, <br>
+						1348 Louvain-La-Neuve, <br>
+						Wallonie Belgique
+					</a>
+				</div>
+			</div>
+	
+		</div>
+	
+	</footer>
+	<div class="container-video" style="z-index:-2;">
+		<video autoplay loop muted id="bgvideo">
+			<source src="assets/img/background-troople.mp4">
+		</video>
+	</div>
+
+	<!-- Scripts -->
+	<script src="./assets/js/theme.min.js"></script>
+	<script src="./assets/js/vendor.min.js"></script>
 </body>
+
 </html>
