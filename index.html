@@ -117,11 +117,10 @@
 							leveraging the Data Science potential.</p>
 
 						<a class="btn btn-secondary2 border-hover-animation" href="mailto:contact@troople.be">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
 							<p class="btn-text mb-0">Contact us</p>
+						</a> 
+						<a class="btn btn-secondary2 border-hover-animation" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arthur-geeraerd/30min'});return false;">
+							<p class="btn-text mb-0">Book us</p>
 						</a>
 
 					</div>
@@ -173,7 +172,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-lg-7">
-						<div class="card card-team" style="height: 80%;">
+						<div class="card card-team" style="height: 90%;">
 							<div class="card-body p-5">
 								<h4 class="card-title mb-5">Troople provides objectives & comprehensive intelligence using advanced AI technologies.</h4>
 								<p class="lead">We empower businesses and decision-makers to make informed
@@ -185,13 +184,14 @@
 									to value untapped data, decode complex information sets and present actionable insights for our clients'
 									success.
 								</p>
+								<p class="text-white">
+									You're a step away from pioneering AI-driven solutions for your business. 
+								</p>
 							</div>
 						</div>
-						<div class="card card-team" style="height: 19%; margin-top: 1%">
-							<div class="card-body px-5 py-3">
-								<p class="lead text-white" style="line-height: 1.25em">
-									You're a step away from pioneering AI-driven solutions for you business. Connect with us!
-								</p>
+						<div class="card card-team" style="height: 9%; margin-top: 1%">
+							<div class="card-body px-5 py-3" style="display: flex; align-items: center; justify-content: center;">
+								<a style="letter-spacing: unset; border-bottom: 1px dotted;" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arthur-geeraerd/30min'});return false;">Connect with us, book a session</a>
 							</div>
 						</div>
 					</div>
@@ -629,12 +629,12 @@
 
 		<section id="contact-us" class="pt-3 pb-6 bg-gradient-black-in">
 			<div class=" text-center mb-lg-3">
-					<a class="btn btn-secondary2 border-hover-animation" href="mailto:contact@troople.be" target="_blank">
+					<a class="btn btn-secondary2 border-hover-animation" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arthur-geeraerd/30min'});return false;" target="_blank">
 					<span></span>
 					<span></span>
 					<span></span>
 					<span></span>
-					<p class="btn-text mb-0">Contact us</p>
+					<p class="btn-text mb-0">Book us</p>
 				</a>				
 			</div>
 		</section>
@@ -740,7 +740,7 @@
 	
 		<div class="container">
 	
-			<div class="row justify-content-center justify-content-md-end g-3 g-lg-4 g-xl-3 mb-3">
+			<div class="row justify-content-center justify-content-md-start g-3 g-lg-4 g-xl-3 mb-3">
 	
 				<!-- Logo -->
 				<div class="col-12 col-lg-4 col-xl-5 me-lg-auto text-center text-lg-start">
@@ -754,17 +754,17 @@
 				</div>
 	
 				<!-- Newsletter -->
-				<div class="col-12 col-md-6 col-lg-4 text-center text-md-start order-md-1">
-					<form action="#">
+				<!--<div class="col-12 col-md-6 col-lg-4 text-center text-md-start order-md-1">
+					 <form action="#">
 						<label class="form-label" for="#newsletter-field">Subscribe to our
 							newsletter</label>
 						<input type="email" class="form-control text-uppercase" id="#newsletter-field"
 							placeholder="Enter your email address">
-					</form>
-				</div>
+					</form> 
+				</div>-->
 	
 				<!-- Socials -->
-				<div class="col-12 col-md-6 col-lg-3 order-md-2">
+				<div class="col-12 col-md-6 col-lg-3 order-md-3">
 					<ul
 						class="list-unstyled d-flex justify-content-evenly justify-content-md-start gap-5 gap-lg-4 align-items-center">
 						<li><a target="_blank" href="https://www.linkedin.com/company/troople">LN</a></li>
@@ -783,7 +783,7 @@
 				</div>
 	
 				<!-- Adress & Cronos -->
-				<div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center align-items-md-start gap-3 order-md-3">
+				<div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center align-items-md-start gap-3 order-md-1">
 					<a href="#" class="d-flex justify-content-center text-center d-md-none">
 						Chemin du Cyclotron 6, <br>
 						1348 Louvain-La-Neuve, <br>
@@ -791,6 +791,7 @@
 					</a>
 	
 					<a href="mailto:contact@troople.be">> CONTACT US <</a>
+					<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arthur-geeraerd/30min'});return false;">> BOOK US <</a>
 				</div>
 			</div>
 	
@@ -825,6 +826,11 @@
 	<!-- Scripts -->
 	<script src="./assets/js/theme.min.js"></script>
 	<script src="./assets/js/vendor.min.js"></script>
+	<!-- Calendly badge widget begin -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+	<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/arthur-geeraerd/30min?hide_gdpr_banner=1', text: 'Book a meeting', color: '#a4ffff', textColor: '#121212', branding: undefined }); }</script>
+	<!-- Calendly badge widget end -->
 </body>
 
 </html>
