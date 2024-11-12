@@ -68,6 +68,71 @@
     max-width: 100%;
 }
 
-.card-team{
-    /* height: 100%; */
+
+.card-team {
+    position: relative;
+}
+
+.ratio {
+    position: relative;
+}
+
+.contact-infos {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: -10px; /* Default for smaller screens */
+}
+
+@media (min-width: 576px) {
+    .contact-infos {
+        margin-top: -15px; /* Adjust for small screens (sm) */
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-infos {
+        margin-top: -20px; /* Adjust for medium screens (md) */
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-infos {
+        margin-top: -30px; /* Adjust for large screens (lg) */
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-infos {
+        margin-top: -35px; /* Adjust for extra large screens (xl) */
+    }
+}
+
+
+/* Ensure the button group contains its buttons */
+.border-mask-outline {
+    display: inline-flex; /* Ensure children stay in line */
+    overflow: hidden; /* Crop any overflowing content */
+    padding: 0; /* Remove padding if any */
+}
+
+/* Styling for the icon button to keep it inside the group */
+.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Remove any extra padding */
+    width: 36px; /* Set width to fit within the group */
+    height: 36px; /* Set height to fit within the group */
+    box-sizing: border-box; /* Ensures it respects padding */
+}
+
+/* Ensure the SVG icon itself is centered and sized properly */
+.icon-svg {
+    width: 16px; /* Uniform width for the icon */
+    height: 16px; /* Uniform height for the icon */
+    display: inline-block; /* Centers SVG in line with flexbox */
 }
