@@ -136,3 +136,14 @@
     height: 16px; /* Uniform height for the icon */
     display: inline-block; /* Centers SVG in line with flexbox */
 }
+
+
+@keyframes blinkBold {
+    0% { font-weight: normal; }
+    50% { font-weight: bold; font-size: calc(var(--bs-nav-link-font-size) * 1.01); color: #a4ffff}
+    100% { font-weight: normal; }
+}
+
+.blink {
+    animation: blinkBold 2s infinite ease-in-out;
+}
