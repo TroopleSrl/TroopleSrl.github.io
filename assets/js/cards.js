@@ -84,7 +84,7 @@ function saveImageToGallery() {
 
         canvas.toBlob(function (blob) {
             // Check if device is iOS or Mac
-            const isAppleDevice = /iPad|iPhone/.test(navigator.userAgent) || navigator.platform.indexOf('Mac') === 0;
+            const isAppleDevice = /iPad|iPhone/.test(navigator.userAgent);
             
             if (isAppleDevice && navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], 'business-card.png', { type: 'image/png' })] })) {
                 // Use Web Share API on iOS and Mac
