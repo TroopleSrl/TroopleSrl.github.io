@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 14.6.1//EN
+N:MAGNIEN;Thierry;;;
+FN:Thierry MAGNIEN
+ORG:Troople;
+EMAIL;type=INTERNET;type=pref:thierry.magnien@troople.be
+EMAIL;type=INTERNET:thierry@magnien.eu
+EMAIL;type=INTERNET:tmagnien@me.com
+TEL;type=HOME;type=VOICE;type=pref:+32497460440
+ADR;type=HOME;type=pref:;;111 Avenue du Parc;Brussels;;;
+END:VCARD

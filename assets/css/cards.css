@@ -8,6 +8,7 @@ body {
     justify-content: center;
     margin: 0;
     font-family: 'SF Mono', monospace;
+    overflow: hidden;
 }
 
 .card-container {
@@ -94,7 +95,7 @@ body {
 }
 
 .btn-card.success {
-    background: linear-gradient(45deg, #4CAF50, #8BC34A);
+    background: linear-gradient(45deg, #A4FFFF, #44FFFF);
 }
 
 /* Responsive Design */

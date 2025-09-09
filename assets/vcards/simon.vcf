@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 14.6.1//EN
+N:LEGENDRE;Simon;;;
+FN:Simon LEGENDRE
+EMAIL;type=WORK,INTERNET;type=pref:simon.legendre@troople.be
+TEL;type=CELL;type=VOICE;type=pref: +32 476 86 32 83
+Bruxelles
+END:VCARD
