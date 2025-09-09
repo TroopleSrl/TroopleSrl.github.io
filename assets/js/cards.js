@@ -83,26 +83,30 @@ function saveImageToGallery() {
         ctx.drawImage(img, 0, 0);
 
         canvas.toBlob(function (blob) {
-            // if (navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], 'business-card.png', { type: 'image/png' })] })) {
-            //     // Use Web Share API if available (mobile devices)
-            //     const file = new File([blob], `${cardName}_business_card.png`, { type: 'image/png' });
-            //     navigator.share({
-            //         files: [file],
-            //         title: 'Business Card',
-            //         text: `${cardName.charAt(0).toUpperCase() + cardName.slice(1)}'s Business Card`
-            //     }).then(() => {
-            //         saveBtn.classList.remove('loading');
-            //         saveBtn.classList.add('success');
-            //         downloadImage(blob);
-            //         setTimeout(() => saveBtn.classList.remove('success'), 2000);
-            //     }).catch((error) => {
-            //         saveBtn.classList.remove('loading');
-            //         console.error('Error sharing:', error);
-            //     });
-            // } else {
-            //     // Fallback to download
-            // }
-            downloadImage(blob);
+            // Check if device is iOS or Mac
+            const isAppleDevice = /iPad|iPhone/.test(navigator.userAgent) || navigator.platform.indexOf('Mac') === 0;
+            
+            if (isAppleDevice && navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], 'business-card.png', { type: 'image/png' })] })) {
+                // Use Web Share API on iOS and Mac
+                const file = new File([blob], `${cardName}_business_card.png`, { type: 'image/png' });
+                navigator.share({
+                    files: [file],
+                    title: 'Business Card',
+                    text: `${cardName.charAt(0).toUpperCase() + cardName.slice(1)}'s Business Card`
+                }).then(() => {
+                    saveBtn.classList.remove('loading');
+                    saveBtn.classList.add('success');
+                    setTimeout(() => saveBtn.classList.remove('success'), 2000);
+                }).catch((error) => {
+                    saveBtn.classList.remove('loading');
+                    console.error('Error sharing:', error);
+                    // Fallback to download if sharing fails
+                    // downloadImage(blob);
+                });
+            } else {
+                // Download for all other platforms
+                downloadImage(blob);
+            }
         }, 'image/png');
     };
 
