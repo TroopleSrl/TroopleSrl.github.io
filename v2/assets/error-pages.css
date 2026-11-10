@@ -1,0 +1,150 @@
+.error-page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100svh;
+}
+
+.error-skip {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	z-index: 10;
+}
+
+.error-nav,
+.error-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.error-header {
+	padding-block: 1.5rem;
+}
+
+.error-nav {
+	flex-wrap: wrap;
+}
+
+.error-brand,
+.error-contact,
+.error-footer a {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+}
+
+.error-contact,
+.error-footer a {
+	color: var(--bs-body-color);
+}
+
+.error-page a:focus-visible {
+	outline: 2px solid var(--bs-accent);
+	outline-offset: 5px;
+}
+
+.error-main {
+	display: grid;
+	grid-template-columns: 1.1fr 1fr;
+	align-items: center;
+	gap: 3rem;
+	flex: 1;
+	padding-block: 3rem 5rem;
+}
+
+.error-content {
+	position: relative;
+	z-index: 1;
+	min-width: 0;
+}
+
+.error-content h1 {
+	font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+}
+
+.error-description {
+	max-width: 35rem;
+	margin-bottom: 2rem;
+}
+
+.error-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.error-visual {
+	position: relative;
+	min-width: 0;
+	height: clamp(22rem, 40vw, 32rem);
+	pointer-events: none;
+}
+
+.error-artwork {
+	width: 100%;
+	height: 100%;
+	color: var(--bs-accent);
+}
+
+.error-dot {
+	fill: currentColor;
+}
+
+.error-artwork-source {
+	visibility: hidden;
+}
+
+.error-particles {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.error-digits,
+.error-icon-mark {
+	font-family: var(--bs-font-monospace);
+	font-weight: 600;
+}
+
+.error-digits {
+	font-size: 186px;
+	letter-spacing: -.075em;
+}
+
+.error-icon-ring {
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 3px;
+	stroke-linecap: round;
+	stroke-dasharray: .1 9;
+}
+
+.error-icon-mark {
+	font-size: 100px;
+	text-anchor: middle;
+}
+
+.error-footer {
+	flex-wrap: wrap;
+	padding-block: 1.25rem;
+	border-top: 1px solid var(--bs-border-color);
+	font-size: .8rem;
+}
+
+@media (max-width: 991.98px) {
+	.error-main {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+		padding-block: 0 3rem;
+	}
+
+	.error-visual {
+		order: -1;
+		width: min(100%, 28rem);
+		height: 14rem;
+		justify-self: center;
+	}
+}
