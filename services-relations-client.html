@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Amélioration de la gestion des relations client | Troople</title>
+
+    <!-- HTML Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Réponses personnalisées, demandes mieux qualifiées, moins de temps à chercher l&#x27;information : nos solutions IA améliorent la relation client, externe comme interne.">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <meta name="author" content="Softedge">
+
+    <link rel="canonical" href="https://troople.be/services/relations-client">
+    <link rel="alternate" hreflang="fr" href="https://troople.be/services/relations-client">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Amélioration de la gestion des relations client | Troople",
+            "url": "https://troople.be/services/relations-client",
+            "datePublished": "2025-01-07T12:00:00Z",
+            "dateModified": "2025-01-08T08:00:00Z"
+        }
+    </script>
+
+    <!-- Favicon and themes -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Date -->
+    <meta property="article:published_time" content="2025-01-07T12:00:00Z">
+    <meta property="article:modified_time" content="2025-01-08T08:00:00Z">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Amélioration de la gestion des relations client | Troople">
+    <meta property="og:description" content="Réponses personnalisées, demandes mieux qualifiées, moins de temps à chercher l&#x27;information : nos solutions IA améliorent la relation client, externe comme interne.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://troople-system.softedge.dev/assets/img/opengraph.jpg">
+    <meta property="og:url" content="https://troople.be/services/relations-client">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content="Amélioration de la gestion des relations client | Troople">
+    <meta name="twitter:description" content="Réponses personnalisées, demandes mieux qualifiées, moins de temps à chercher l&#x27;information : nos solutions IA améliorent la relation client, externe comme interne.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="https://troople.be/services/relations-client">
+    <meta property="twitter:image" content="https://troople-system.softedge.dev/assets/img/opengraph.jpg">
+
+    <!-- critical -->
+    <!-- ===================================================================== -->
+    <!-- Critical inline CSS — must be parsed synchronously in <head>          -->
+    <!--                                                                       -->
+    <!--  Page transition (View Transitions API + JS departure curtain)        -->
+    <!--  ------------------------------------------------------------         -->
+    <!--  Departure: page-transition.js mounts .page-curtain (variant-driven)  -->
+    <!--  and slides it in before navigating. Arrival: ::view-transition-new   -->
+    <!--  reveals the new page, targeted per variant via                       -->
+    <!--  :active-view-transition-type(name).                                  -->
+    <!--                                                                       -->
+    <!--  The @view-transition opt-in + animations must live here so they are  -->
+    <!--  present synchronously in <head> (Vite dev serves SCSS as a JS module,-->
+    <!--  which injects styles too late for cross-document VT).                -->
+    <!--                                                                       -->
+    <!--  Variants: curtain (default), fade,                                   -->
+    <!--            slide-up, slide-down, slide-left, slide-right.             -->
+    <!--                                                                       -->
+    <!--  Mirror of src/assets/scss/parent/motions/_page-transition.scss       -->
+    <!--  Edit BOTH files when changing styles.                                -->
+    <!-- ===================================================================== -->
+    <style>
+        @view-transition {
+            navigation: auto;
+        }
+    
+        /* Departure is handled by the JS curtain — hold the old snapshot
+           static until the new page is ready and the reveal plays. */
+        ::view-transition-old(root) {
+            animation: none;
+        }
+    
+        /* Default reveal — asymmetric "curtain" feel: divide rises back up. */
+        ::view-transition-new(root) {
+            animation: vt-reveal-from-bottom 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+    
+        ::view-transition-new(root):active-view-transition-type(slide-down) {
+            animation-name: vt-reveal-from-top;
+        }
+        ::view-transition-new(root):active-view-transition-type(slide-up) {
+            animation-name: vt-reveal-from-bottom;
+        }
+        ::view-transition-new(root):active-view-transition-type(slide-left) {
+            animation-name: vt-reveal-from-right;
+        }
+        ::view-transition-new(root):active-view-transition-type(slide-right) {
+            animation-name: vt-reveal-from-left;
+        }
+    
+        /* Fade — crossfade both old and new */
+        ::view-transition-old(root):active-view-transition-type(fade) {
+            animation: vt-fade-out 0.5s ease-out both;
+        }
+        ::view-transition-new(root):active-view-transition-type(fade) {
+            animation: vt-fade-in 0.5s ease-out both;
+        }
+    
+        ::view-transition-image-pair(root) {
+            background-color: var(--page-transition-curtain, var(--bs-body-bg-darkest));
+        }
+    
+        @keyframes vt-reveal-from-bottom {
+            from { clip-path: inset(100% 0 0 0); }
+            to   { clip-path: inset(0); }
+        }
+        @keyframes vt-reveal-from-top {
+            from { clip-path: inset(0 0 100% 0); }
+            to   { clip-path: inset(0); }
+        }
+        @keyframes vt-reveal-from-right {
+            from { clip-path: inset(0 0 0 100%); }
+            to   { clip-path: inset(0); }
+        }
+        @keyframes vt-reveal-from-left {
+            from { clip-path: inset(0 100% 0 0); }
+            to   { clip-path: inset(0); }
+        }
+        @keyframes vt-fade-in {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+        @keyframes vt-fade-out {
+            from { opacity: 1; }
+            to   { opacity: 0; }
+        }
+    
+        /* JS-driven departure curtain — sits over the page while the current
+           content stays visible underneath. Variant class drives the
+           starting transform / opacity; .is-active animates it to cover. */
+        .page-curtain {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            background-color: var(--page-transition-curtain, var(--bs-body-bg-darkest));
+            pointer-events: none;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+        }
+    
+        .page-curtain--curtain,
+        .page-curtain--slide-down {
+            transform: translateY(-100%);
+            transition-property: transform;
+        }
+        .page-curtain--slide-up {
+            transform: translateY(100%);
+            transition-property: transform;
+        }
+        .page-curtain--slide-left {
+            transform: translateX(100%);
+            transition-property: transform;
+        }
+        .page-curtain--slide-right {
+            transform: translateX(-100%);
+            transition-property: transform;
+        }
+        .page-curtain--fade {
+            opacity: 0;
+            transition-property: opacity;
+        }
+    
+        .page-curtain.is-active {
+            transform: translate(0);
+            opacity: 1;
+        }
+    
+        @media (prefers-reduced-motion: reduce) {
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.01ms;
+            }
+            .page-curtain {
+                transition-duration: 0.01ms;
+            }
+        }
+    </style>
+
+    <!-- CSS -->
+
+  <script type="module" crossorigin src="assets/main.Bx2ynZhg.js"></script>
+  <link rel="stylesheet" crossorigin href="assets/main.C9vMl-Jo.css">
+</head>
+<body data-bs-theme="">
+
+	<header>
+		<nav class="navbar navbar-expand-lg fixed-top hide-nav" aria-label="Navigation principale">
+			<a class="visually-hidden-focusable btn btn-primary position-absolute top-0 start-0 m-2 z-3" href="#theme-main">Aller au contenu</a>
+			<div class="container py-2">
+				<a class="navbar-brand hstack" href="index.html">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 50" class=""  height="32" aria-hidden="true">
+						<path fill="currentColor" class="text-accent" d="M21.77 50H3.27A3.27 3.27 0 0 1 0 46.71c0-.57.16-1.14.44-1.64L25.4 1.64a3.27 3.27 0 0 1 5.66 0L56 45.07A3.29 3.29 0 0 1 53.18 50h-19.3a3.27 3.27 0 0 1-2.82-4.93l2.93-5.1a2.18 2.18 0 0 1 3.77 0l4.83 8.39a1.09 1.09 0 0 0 1.89 0l5.77-10.04a1.1 1.1 0 0 0-.95-1.64h-9.65a2.18 2.18 0 0 1-1.89-3.28L42.6 25a1.1 1.1 0 0 0-.94-1.64H32a2.18 2.18 0 0 1-2.18-2.2c0-.38.1-.76.3-1.09l4.81-8.39a1.1 1.1 0 0 0-.94-1.64H22.46a1.1 1.1 0 0 0-.95 1.64l4.83 8.4a2.19 2.19 0 0 1-1.89 3.28h-9.64a1.1 1.1 0 0 0-.95 1.64l4.82 8.4a2.2 2.2 0 0 1-1.88 3.28H7.15a1.1 1.1 0 0 0-.94 1.64l5.77 10.04a1.09 1.09 0 0 0 1.88 0l4.82-8.4a2.18 2.18 0 0 1 3.78 0l2.94 5.11A3.29 3.29 0 0 1 22.57 50h-.8Z" />
+						<path fill="currentColor" class="text-contrast-higher" d="M87.22 15.3h-6.75v22.4h-4.39V15.3H69.3v-4.17h17.93v4.17Zm15.22 12.71h-4.16v9.68H93.9V11.13h9.92c4.77 0 8.59 3.8 8.59 8.54a8.49 8.49 0 0 1-5.27 7.7l8.7 10.32h-5.23l-8.16-9.68Zm-4.16-3.9h5.53a4.3 4.3 0 0 0 4.2-4.44 4.3 4.3 0 0 0-4.2-4.44H98.3v8.88Zm20.6.3a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.68 13.68 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3c0 7.7-6.1 13.78-13.85 13.78a13.65 13.65 0 0 1-12.8-8.47 13.74 13.74 0 0 1-1.04-5.31Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.47-9.51v-.01Zm9.77 0a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.67 13.67 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3 13.74 13.74 0 0 1-8.54 12.78 13.66 13.66 0 0 1-5.3 1 13.69 13.69 0 0 1-13.85-13.78Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.46-9.51v-.01Zm29.6-4.74c0 4.7-3.82 8.53-8.67 8.53h-5.45v9.5h-4.39V11.12h9.84c4.85 0 8.66 3.8 8.66 8.54Zm-4.4 0a4.3 4.3 0 0 0-4.27-4.44h-5.45v8.88h5.45c2.4 0 4.27-1.97 4.27-4.44Zm26.7 13.85v4.17H212.1V11.13h4.39v22.39h10.67Zm22.32 0v4.17h-15.64V11.13h15.45v4.18h-11.06v6.9h10.1v4.1h-10.1v7.2h11.26Z" />
+					</svg>				<span class="visually-hidden">Troople</span>
+				</a>
+	
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<span class="visually-hidden">
+						Menu
+					</span>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="offcanvas offcanvas-end" data-bs-backdrop="static" data-bs-scroll="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+	
+					<div class="offcanvas-header">
+						<span class="offcanvas-title fs-1 fw-bold" id="offcanvasNavbarLabel">
+							Menu
+						</span>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+	
+					<div class="offcanvas-body d-flex flex-column flex-lg-row">
+	
+						<ul class="navbar-nav navbar-nav-center">
+	
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span>Services</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"/></svg>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="services-automatisation-administrative.html">
+											Automatisation des processus administratifs
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="services-gestion-connaissance.html">
+											Optimisation de la gestion de la connaissance
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="services-relations-client.html">
+											Amélioration de la gestion des relations client
+										</a>
+									</li>
+								</ul>
+							</li>
+	
+							<li class="nav-item">
+								<a class="nav-link" href="cas-usage.html">
+									Cas d'usage
+								</a>
+							</li>
+	
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span>Industries</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"/></svg>
+								</a>
+								<div class="dropdown-menu dropdown-mega p-2 p-lg-3">
+									<ul class="list-unstyled row row-cols-1 row-cols-lg-3 g-2 mb-0">
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=agricole">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 22L16 8M3.47 12.53L5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94m4-4L9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94m4-4L13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4"/><path d="M11.47 17.47L13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0m4-4L17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0m4-4L21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Agricole</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=association-federale">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Association fédérale</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=construction">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5m0-4a6 6 0 0 1 6 6v3M4 15v-3a6 6 0 0 1 6-6"/><rect width="20" height="4" x="2" y="15" rx="1"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Construction</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=industrie">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"/></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Industrie</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=infogerance">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><path d="M6 6h.01M6 18h.01"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Infogérance</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=juridique">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3v18m7-13l3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2a17 17 0 0 0 8 2h1M5 8l3 8a5 5 0 0 1-6 0zV7m2 14h10"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Juridique</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=saas">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"/></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Plateforme SaaS</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=sante">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676a.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/><path d="M3.22 13H9.5l.5-1l2 4.5l2-7l1.5 3.5h5.27"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Santé</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=public">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 18v-7m1.119-8.795a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949zM14 18v-7m4 7v-7M3 22h18M6 18v-7"/></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Secteur public</span>
+											</a>
+										</li>
+									</ul>
+									<div class="border-top mt-2 pt-2 px-2 text-end">
+										<a class="small link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="cas-usage.html">Tous les cas d'usage <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"/></svg></a>
+									</div>
+								</div>
+							</li>
+	
+						</ul>
+	
+						<div class="d-flex flex-row gap-4 flex-wrap ms-lg-auto">
+	
+							<a class="btn btn-primary order-lg-3 flex-basis-100 flex-basis-lg-auto" href="https://calendly.com/arthur-geeraerd/30min" target="_blank" rel="noopener">
+								Quick call
+							</a>
+	
+						</div>
+	
+					</div>
+	
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main id="theme-main">
+
+		<!-- Hero -->
+		<section id="hero" class="hero bg-body glow glow-center position-relative" data-bs-theme="dark">
+			<div class="pt-stage pt-cover d-none d-lg-block" data-points="conversation" aria-hidden="true"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<h1 class="display-3 mb-4">Moins de temps à chercher, <span class="text-accent">plus de temps pour vos clients</span></h1>
+						<p class="lead mb-4">Une part importante du temps de support part en demandes répétitives et en recherche d'informations dispersées. Nos solutions IA améliorent la relation client, externe comme interne.</p>
+						<div class="d-flex align-items-center gap-4 flex-wrap">
+							<a href="https://calendly.com/arthur-geeraerd/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Quick call</a>
+							<a class="btn btn-link btn-lg" href="#fonctionnement">Voir ce que ça améliore <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m7-7l-7 7l-7-7"/></svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Présentation -->
+		<section class="bg-body glow glow-end" data-bs-theme="dark">
+			<div class="container">
+				<div class="row justify-content-center text-center">
+					<div class="col-lg-9">
+						<h2 class="display-5 mb-4">Le support client, au centre de la relation</h2>
+						<p class="lead mb-0">La relation client, externe comme interne, est essentielle pour renforcer la proximité avec l'entreprise et démontrer son souci de répondre à leurs attentes. Le support client joue un rôle central dans cette relation. Toutefois, une part importante du temps consacré aux demandes est soit répétitive, soit absorbée par la recherche d'informations, souvent dispersées dans différents outils et bases documentaires.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Technologie : comment ça fonctionne -->
+		<section id="fonctionnement" class="glow glow-top-end glow-bottom-start glow-circle">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-lg-8">
+						<h2 class="display-5 mb-4">Ce qui s'améliore dans votre relation client</h2>
+						<p class="lead mb-0">Les solutions Troople vous permettent d'améliorer cette relation client en cinq points.</p>
+					</div>
+				</div>
+
+				<div class="nav nav-pills nav-pills-surface flex-column flex-md-row gap-2 mb-4" role="tablist" aria-label="Ce qui s'améliore dans votre relation client">
+					<button type="button" class="nav-link flex-fill d-flex align-items-center gap-3 text-start active" id="etape-1-tab" data-bs-toggle="pill" data-bs-target="#etape-1" role="tab" aria-controls="etape-1" aria-selected="true">
+						<span class="step-num">1</span><span class="fs-5">Expérience</span>
+					</button>
+					<button type="button" class="nav-link flex-fill d-flex align-items-center gap-3 text-start" id="etape-2-tab" data-bs-toggle="pill" data-bs-target="#etape-2" role="tab" aria-controls="etape-2" aria-selected="false">
+						<span class="step-num">2</span><span class="fs-5">Efficacité</span>
+					</button>
+					<button type="button" class="nav-link flex-fill d-flex align-items-center gap-3 text-start" id="etape-3-tab" data-bs-toggle="pill" data-bs-target="#etape-3" role="tab" aria-controls="etape-3" aria-selected="false">
+						<span class="step-num">3</span><span class="fs-5">Qualité</span>
+					</button>
+					<button type="button" class="nav-link flex-fill d-flex align-items-center gap-3 text-start" id="etape-4-tab" data-bs-toggle="pill" data-bs-target="#etape-4" role="tab" aria-controls="etape-4" aria-selected="false">
+						<span class="step-num">4</span><span class="fs-5">Connaissance</span>
+					</button>
+					<button type="button" class="nav-link flex-fill d-flex align-items-center gap-3 text-start" id="etape-5-tab" data-bs-toggle="pill" data-bs-target="#etape-5" role="tab" aria-controls="etape-5" aria-selected="false">
+						<span class="step-num">5</span><span class="fs-5">Économie</span>
+					</button>
+				</div>
+				<div class="tab-content mb-5">
+					<div class="tab-pane fade show active" id="etape-1" role="tabpanel" aria-labelledby="etape-1-tab" tabindex="0">
+						<div class="card card-surface">
+							<div class="card-body">
+								<div class="row g-4 align-items-center">
+									<div class="col-lg-5">
+										<h3 class="card-title mb-3">Amélioration de l'expérience utilisateur</h3>
+										<p class="card-text mb-0">Personnaliser les interactions (les réponses étant adaptées en fonction de l'interlocuteur), fluidifier les parcours avec un service plus rapide et disponible en continu (24/7).</p>
+									</div>
+									<div class="col-lg-7">
+										<svg class="illustration " width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+											<circle class="il-cap" cx="320" cy="40" r="2.5"/>
+											<circle class="il-cap" cx="356.2" cy="44.8" r="1.5"/>
+											<circle class="il-cap" cx="390" cy="58.8" r="1.5"/>
+											<circle class="il-cap" cx="419" cy="81" r="1.5"/>
+											<circle class="il-cap" cx="441.2" cy="110" r="1.5"/>
+											<circle class="il-cap" cx="455.2" cy="143.8" r="1.5"/>
+											<circle class="il-cap" cx="460" cy="180" r="2.5"/>
+											<circle class="il-cap" cx="455.2" cy="216.2" r="1.5"/>
+											<circle class="il-cap" cx="441.2" cy="250" r="1.5"/>
+											<circle class="il-cap" cx="419" cy="279" r="1.5"/>
+											<circle class="il-cap" cx="390" cy="301.2" r="1.5"/>
+											<circle class="il-cap" cx="356.2" cy="315.2" r="1.5"/>
+											<circle class="il-cap" cx="320" cy="320" r="2.5"/>
+											<circle class="il-cap" cx="283.8" cy="315.2" r="1.5"/>
+											<circle class="il-cap" cx="250" cy="301.2" r="1.5"/>
+											<circle class="il-cap" cx="221" cy="279" r="1.5"/>
+											<circle class="il-cap" cx="198.8" cy="250" r="1.5"/>
+											<circle class="il-cap" cx="184.8" cy="216.2" r="1.5"/>
+											<circle class="il-cap" cx="180" cy="180" r="2.5"/>
+											<circle class="il-cap" cx="184.8" cy="143.8" r="1.5"/>
+											<circle class="il-cap" cx="198.8" cy="110" r="1.5"/>
+											<circle class="il-cap" cx="221" cy="81" r="1.5"/>
+											<circle class="il-cap" cx="250" cy="58.8" r="1.5"/>
+											<circle class="il-cap" cx="283.8" cy="44.8" r="1.5"/>
+											<path class="il-link il-acc" d="M379 77.8L342 141.9" stroke-width="1.2"/>
+											<path class="il-link il-acc" d="M403.4 263.4L351.1 211.1" stroke-width="1.2"/>
+											<path class="il-link il-acc" d="M236.6 263.4L288.9 211.1" stroke-width="1.2"/>
+											<path class="il-link il-acc" d="M236.6 96.6L288.9 148.9" stroke-width="1.2"/>
+											<g class="il-node"><rect x="370" y="38.8" width="40" height="40" rx="11.2"/><g transform="translate(381.2 50) scale(0.733)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.39"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g></g></g>
+											<g class="il-node"><rect x="399" y="259" width="40" height="40" rx="11.2"/><g transform="translate(410.2 270.2) scale(0.733)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.39"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g></g></g>
+											<g class="il-node"><rect x="201" y="259" width="40" height="40" rx="11.2"/><g transform="translate(212.2 270.2) scale(0.733)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.39"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g></g></g>
+											<g class="il-node"><rect x="201" y="61" width="40" height="40" rx="11.2"/><g transform="translate(212.2 72.2) scale(0.733)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.39"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g></g></g>
+											<g class="il-node il-acc"><rect x="288" y="148" width="64" height="64" rx="17.9"/><g transform="translate(305.9 165.9) scale(1.173)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.49"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></g></g></g>
+											<text class="il-cap il-acc" x="320" y="232" text-anchor="middle">à toute heure</text>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="etape-2" role="tabpanel" aria-labelledby="etape-2-tab" tabindex="0">
+						<div class="card card-surface">
+							<div class="card-body">
+								<div class="row g-4 align-items-center">
+									<div class="col-lg-5">
+										<h3 class="card-title mb-3">Augmentation de l'efficacité opérationnelle</h3>
+										<p class="card-text mb-0">Supprimer toutes les tâches répétitives, réduire les délais de recherche et de traitement de l'information et libérer du temps pour les équipes.</p>
+									</div>
+									<div class="col-lg-7">
+										<svg class="illustration " width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+											<text class="il-cap" x="60" y="110" text-anchor="start">recherche et traitement</text>
+											<path class="il-link il-faint" d="M60 136L540 136" stroke-width="6"/>
+											<g class="il-node il-muted"><rect x="550" y="116" width="40" height="40" rx="11.2"/><g transform="translate(561.2 127.2) scale(0.733)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.39"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></g></g></g>
+											<text class="il-cap il-acc" x="60" y="220" text-anchor="start">avec l'assistant</text>
+											<path class="il-link il-acc" d="M60 246L250 246" stroke-width="6"/>
+											<g class="il-node il-acc"><rect x="260" y="226" width="40" height="40" rx="11.2"/><g transform="translate(271.2 237.2) scale(0.733)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.39"><circle cx="12" cy="12" r="10"/><path d="m9 12l2 2l4-4"/></g></g></g>
+											<path class="il-link il-faint" d="M310 246L540 246" stroke-width="1.2" stroke-dasharray="3 4"/>
+											<text class="il-cap" x="425" y="280" text-anchor="middle">temps rendu aux équipes</text>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="etape-3" role="tabpanel" aria-labelledby="etape-3-tab" tabindex="0">
+						<div class="card card-surface">
+							<div class="card-body">
+								<div class="row g-4 align-items-center">
+									<div class="col-lg-5">
+										<h3 class="card-title mb-3">Amélioration de la qualité du service</h3>
+										<p class="card-text mb-0">Fiabiliser les réponses grâce à un accès à plusieurs sources de données et des demandes mieux qualifiées.</p>
+									</div>
+									<div class="col-lg-7">
+										<svg class="illustration " width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+											<path class="il-link" d="M94 180C166 180 166 180 238 180" stroke-width="1.2"/>
+											<path class="il-link il-acc" d="M302 180C353 180 353 110 404 110" stroke-width="1.2"/>
+											<path class="il-link il-acc" d="M302 180C353 180 353 180 404 180" stroke-width="1.2"/>
+											<path class="il-link il-acc" d="M302 180C353 180 353 250 404 250" stroke-width="1.2"/>
+											<g class="il-node"><rect x="46" y="156" width="48" height="48" rx="13.4"/><g transform="translate(59.4 169.4) scale(0.88)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.99"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11"/></g></g></g>
+											<text class="il-cap" x="70" y="222" text-anchor="middle">demande</text>
+											<g class="il-node"><rect x="238" y="148" width="64" height="64" rx="17.9"/><g transform="translate(255.9 165.9) scale(1.173)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.49" d="M22 3H2l8 9.46V19l4 2v-8.54z"/></g></g>
+											<text class="il-cap" x="270" y="232" text-anchor="middle">qualification</text>
+											<g class="il-pill il-acc"><rect x="404" y="96" width="140" height="28" rx="14"/><text x="474" y="114" text-anchor="middle">catégorie</text></g>
+											<g class="il-pill il-acc"><rect x="404" y="166" width="140" height="28" rx="14"/><text x="474" y="184" text-anchor="middle">priorité</text></g>
+											<g class="il-pill il-acc"><rect x="404" y="236" width="140" height="28" rx="14"/><text x="474" y="254" text-anchor="middle">contexte client</text></g>
+											<path class="il-link il-acc" d="M544 180L572 180" stroke-width="1.2"/>
+											<g class="il-node il-acc"><rect x="576" y="160" width="40" height="40" rx="11.2"/><g transform="translate(587.2 171.2) scale(0.733)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.39"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></g></g></g>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="etape-4" role="tabpanel" aria-labelledby="etape-4-tab" tabindex="0">
+						<div class="card card-surface">
+							<div class="card-body">
+								<div class="row g-4 align-items-center">
+									<div class="col-lg-5">
+										<h3 class="card-title mb-3">Valorisation de la connaissance et aide à la décision</h3>
+										<p class="card-text mb-0">Capitaliser sur les échanges passés, accéder à toutes les sources de données possibles (outils métiers, SharePoint, Drive…) pour enrichir la qualité et la pertinence et mieux répondre aux besoins des utilisateurs.</p>
+									</div>
+									<div class="col-lg-7">
+										<svg class="illustration " width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+											<path class="il-link" d="M166 72C217 72 217 180 268 180" stroke-width="1.2"/>
+											<path class="il-link" d="M166 144C217 144 217 180 268 180" stroke-width="1.2"/>
+											<path class="il-link" d="M166 216C217 216 217 180 268 180" stroke-width="1.2"/>
+											<path class="il-link" d="M166 288C217 288 217 180 268 180" stroke-width="1.2"/>
+											<path class="il-link il-acc" d="M332 180C395 180 395 180 458 180" stroke-width="1.5"/>
+											<g class="il-pill"><rect x="26" y="58" width="140" height="28" rx="14"/><text x="96" y="76" text-anchor="middle">échanges passés</text></g>
+											<g class="il-pill"><rect x="26" y="130" width="140" height="28" rx="14"/><text x="96" y="148" text-anchor="middle">outils métiers</text></g>
+											<g class="il-pill"><rect x="26" y="202" width="140" height="28" rx="14"/><text x="96" y="220" text-anchor="middle">SharePoint</text></g>
+											<g class="il-pill"><rect x="26" y="274" width="140" height="28" rx="14"/><text x="96" y="292" text-anchor="middle">Drive</text></g>
+											<g class="il-node"><rect x="268" y="148" width="64" height="64" rx="17.9"/><g transform="translate(285.9 165.9) scale(1.173)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.49" d="m16 6l4 14M12 6v14M8 8v12M4 4v16"/></g></g>
+											<g class="il-node il-acc"><rect x="458" y="138" width="84" height="84" rx="23.5"/><g transform="translate(481.5 161.5) scale(1.54)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.14" d="M15 14c.2-1 .7-1.7 1.5-2.5c1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5c.7.7 1.3 1.5 1.5 2.5m0 4h6m-5 4h4"/></g></g>
+											<text class="il-cap il-acc" x="500" y="246" text-anchor="middle">aide à la décision</text>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="etape-5" role="tabpanel" aria-labelledby="etape-5-tab" tabindex="0">
+						<div class="card card-surface">
+							<div class="card-body">
+								<div class="row g-4 align-items-center">
+									<div class="col-lg-5">
+										<h3 class="card-title mb-3">Optimisation économique et création de valeur</h3>
+										<p class="card-text mb-0">Réduire les coûts de traitement et ainsi améliorer la productivité et optimiser l'allocation des ressources, mais aussi faciliter la montée en compétences des collaborateurs et leur formation.</p>
+									</div>
+									<div class="col-lg-7">
+										<svg class="illustration " width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+											<path class="il-link il-faint" d="M60 300L580 300" stroke-width="1.2"/>
+											<path class="il-link il-faint" d="M60 300L60 50" stroke-width="1.2"/>
+											<path class="il-link" d="M60 120C200 140 300 250 560 270" stroke-width="1.2" stroke-dasharray="3 4"/>
+											<path class="il-link il-acc" d="M60 270C220 260 360 160 520 80" stroke-width="1.5"/>
+											<g class="il-node il-muted"><rect x="540" y="250" width="40" height="40" rx="11.2"/><g transform="translate(551.2 261.2) scale(0.733)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.39"><path d="M13.744 17.736a6 6 0 1 1-7.48-7.48M15 6h1v4"/><path d="m6.134 14.768l.866-.5l2 3.464"/><circle cx="16" cy="8" r="6"/></g></g></g>
+											<text class="il-cap" x="560" y="330" text-anchor="middle">coût par demande</text>
+											<g class="il-node il-acc"><rect x="516" y="46" width="48" height="48" rx="13.4"/><g transform="translate(529.4 59.4) scale(0.88)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.99"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></g></g>
+											<text class="il-cap il-acc" x="470" y="40" text-anchor="middle">productivité</text>
+											<circle class="il-dot" cx="220" cy="247" r="3"/>
+											<circle class="il-dot" cx="360" cy="180" r="3"/>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="d-flex align-items-center justify-content-end gap-4 flex-wrap text-end">
+					<p class="mb-0">Décrivez-nous les demandes qui occupent vos équipes, nous vous dirons ce qui peut être pris en charge.</p>
+					<a href="https://calendly.com/arthur-geeraerd/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Quick call</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Cas d'usage -->
+		<section id="cas-concrets" class="bg-body glow glow-top-start" data-bs-theme="dark">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-lg-8">
+						<h2 class="display-5 mb-4">À quoi ça ressemble en pratique</h2>
+						<p class="lead mb-0">À travers ces huit références, trois grandes tendances se dégagent :</p>
+					</div>
+				</div>
+				<div class="row g-4 mb-5">
+					<div class="col-md-4">
+						<div class="card card-glass h-100">
+							<div class="card-body">
+								<h3 class="card-title h5 mb-2">Faciliter l'accès à la connaissance</h3>
+								<p class="card-text mb-0">L'IA centralise et exploite des informations dispersées pour apporter des réponses contextualisées et fiables.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card card-glass h-100">
+							<div class="card-body">
+								<h3 class="card-title h5 mb-2">Augmenter la capacité de traitement des équipes</h3>
+								<p class="card-text mb-0">L'automatisation des recherches, des réponses et des tâches répétitives améliore la productivité et la réactivité.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card card-glass h-100">
+							<div class="card-body">
+								<h3 class="card-title h5 mb-2">Renforcer la qualité de la relation client</h3>
+								<p class="card-text mb-0">Les collaborateurs peuvent se concentrer davantage sur l'accompagnement, le conseil et les interactions à valeur ajoutée.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row g-5">
+
+					<div class="col-lg-8" data-sticky-spy="#cas-nav">
+						<div class="stacking-cards" style="--stacking-cards-gap: 1.5rem;">
+							<div class="stacking-cards-item pb-4" id="cas-14" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="data:image/svg+xml,%3csvg%20width='109'%20height='38'%20viewBox='0%200%20109%2038'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M83.9173%2024.3258C84.8312%2024.3605%2086.0073%2024.2795%2087.2007%2024.3123C86.31%2026.5083%2084.8389%2028.3669%2083.0381%2029.6857C80.844%2031.2917%2078.3723%2031.8354%2075.7714%2031.4113C74.1943%2031.1549%2072.6769%2030.5167%2071.3581%2029.4543C70.0143%2028.3708%2069.0329%2027.0385%2068.4545%2025.4845C67.6525%2023.3271%2067.4616%2021.0983%2068.2328%2018.8251C68.6184%2017.6915%2069.0946%2016.6503%2069.8177%2015.7075C70.747%2014.4929%2071.9346%2013.6175%2073.2842%2012.9157C75.1448%2011.9498%2077.1499%2011.7049%2079.1416%2012.0424C80.7476%2012.3142%2082.3132%2012.8579%2083.6532%2013.9723C85.0221%2015.1098%2086.0863%2016.4209%2086.6859%2018.0674C87.22%2019.5289%2087.6538%2021.0385%2087.3183%2022.768H71.2C70.8742%2024.5687%2072.8639%2026.9363%2075.5612%2028.0893C76.6332%2028.5482%2077.7804%2028.446%2078.8871%2028.3264C79.9803%2028.2088%2080.9096%2027.6401%2081.7791%2026.9537C82.6795%2026.2423%2083.2772%2025.3091%2083.9134%2024.3258H83.9173ZM84.0214%2019.9588C83.9192%2017.4158%2081.8466%2015.7095%2079.8627%2015.133C78.0522%2014.6066%2076.1551%2014.6471%2074.3851%2015.5687C73.3093%2016.1298%2072.3916%2016.8721%2071.7997%2017.9248C71.4623%2018.5263%2071.0188%2019.1568%2071.2135%2019.9588H84.0195H84.0214Z'%20fill='%231E76E5'/%3e%3cpath%20d='M98.4716%2031.4942C93.1232%2031.5867%2088.6194%2026.9537%2088.7775%2021.3509C88.9298%2016.0102%2093.3874%2011.6298%2098.8707%2011.7956C104.375%2011.9614%20108.482%2016.3611%20108.393%2021.8483C108.306%2027.1831%20104.163%2031.6118%2098.4716%2031.4942ZM98.5256%2028.5193C102.428%2028.8085%20105.42%2025.4325%20105.418%2021.7268C105.418%2017.8341%20102.611%2014.7821%2098.7512%2014.757C94.5191%2014.73%2091.6792%2017.6163%2091.737%2021.8579C91.7871%2025.4691%2094.7158%2028.7699%2098.5256%2028.5173V28.5193Z'%20fill='%231E76E5'/%3e%3cpath%20d='M54.1852%204.66574C55.0683%204.6696%2056.0516%204.6079%2057.058%204.70623C57.2238%205.26343%2057.1737%205.77436%2057.1737%206.2795C57.1775%2012.1889%2057.1621%2018.0964%2057.1891%2024.0058C57.1949%2025.2879%2057.4147%2026.5507%2058.2534%2027.6825C58.585%2027.9871%2058.7758%2028.2262%2059.2791%2028.3226C61.3131%2028.4633%2063.3684%2028.3669%2065.4198%2028.3862C65.8729%2028.3901%2066.3144%2028.4036%2066.7733%2028.6504C66.9005%2029.5064%2066.8774%2030.3894%2066.7887%2031.2031C66.5053%2031.5366%2066.1968%2031.4576%2065.9192%2031.4595C64.3459%2031.4672%2062.7669%2031.5424%2061.1994%2031.4421C59.9018%2031.3592%2058.5464%2031.2648%2057.3433%2030.8271C55.2109%2030.0501%2054.0136%2028.1028%2053.8902%2025.8489C53.5509%2019.66%2053.7958%2013.4633%2053.7206%207.27243C53.7129%206.69402%2053.7264%206.11562%2053.7129%205.53914C53.7051%205.19788%2053.7553%204.89711%2054.1833%204.66574H54.1852Z'%20fill='%231E76E5'/%3e%3cpath%20d='M48.0791%2031.4152C47.2038%2031.7429%2046.0547%2031.4884%2045.7713%2031.4595C45.1774%2031.2185%2045.1986%2030.7963%2045.2006%2030.3683C45.2064%2028.2494%2045.2025%2026.1285%2045.2025%2024.0096C45.2025%2020.4119%2045.2025%2016.8162%2045.2044%2013.2185C45.2044%2012.8367%2045.1582%2012.4511%2045.2931%2011.9749C46.367%2011.9286%2047.4602%2011.8534%2048.6132%2012.0231V30.6498C48.6132%2030.991%2048.3992%2031.2956%2048.0791%2031.4152Z'%20fill='%231E76E5'/%3e%3cpath%20d='M47.5044%204.70432C48.6362%205.13234%2049.0507%205.94982%2049.1991%206.99867C49.0892%207.74288%2048.7461%208.39841%2048.0269%208.83993C47.0108%209.13685%2046.0333%209.19083%2045.3007%208.19211C44.7685%207.46718%2044.6104%206.71332%2045.0674%205.88427C45.6149%204.89134%2046.4748%204.57707%2047.5044%204.70625V4.70432Z'%20fill='%231E76E5'/%3e%3cpath%20d='M0%200H20.3329C20.3773%200.0829051%2020.4583%200.0636248%2020.5277%200.0694089C21.2314%200.121466%2021.9255%200.227507%2022.6196%200.360541C32.7726%202.30785%2039.5496%2012.3162%2037.6042%2022.4923C35.628%2032.8285%2025.8066%2039.5766%2015.5013%2037.6813C6.54179%2036.0348%200.00578407%2028.1569%200%2018.993C0%2012.6613%200%206.33163%200%200ZM29.0862%2018.991C29.0842%2013.3998%2024.5457%208.85349%2018.964%208.85156C13.3843%208.85156%208.83999%2013.3959%208.83614%2018.9853C8.83035%2024.5939%2013.3805%2029.1498%2018.9775%2029.1421C24.5572%2029.1344%2029.09%2024.5842%2029.0862%2018.991Z'%20fill='%231E76E5'/%3e%3c/svg%3e" alt="iLeo" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Plateforme SaaS</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Assistant pour le traitement des demandes RH collaborateurs</h3>
+										<p class="card-text mb-4">Développement d&#x27;un assistant IA multi-agents pour accompagner les équipes RH dans le traitement des demandes des collaborateurs, en croisant la documentation interne et les réglementations externes.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Réduction du temps de recherche documentaire, accélération du traitement des demandes et meilleure maîtrise de la conformité réglementaire.</p>
+										</div>
+									</div>
+								</div>							</div>
+							<div class="stacking-cards-item pb-4" id="cas-15" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="assets/img/logo-mobilosoft.svg" alt="Mobilosoft" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Plateforme SaaS</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Analyse prédictive de l&#x27;e-réputation et des avis clients</h3>
+										<p class="card-text mb-4">Développement d&#x27;un assistant IA analysant les avis clients et ceux des concurrents sur les réseaux sociaux afin d&#x27;évaluer la réputation des points de vente.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Amélioration de l'e-réputation et de la performance commerciale grâce à une meilleure compréhension des attentes clients et à des recommandations d'actions concrètes.</p>
+										</div>
+									</div>
+								</div>							</div>
+							<div class="stacking-cards-item pb-4" id="cas-16" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20width='250px'%20height='51px'%20viewBox='0%200%20250%2051'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3ctitle%3eWALK_white_noBASELINE%3c/title%3e%3cg%20id='Page-1'%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%3e%3cg%20id='WALK_white_noBASELINE'%20fill-rule='nonzero'%3e%3cpolygon%20id='Path'%20fill='%23FFFFFF'%20points='163.62%200.86%20151.16%200.86%20151.16%2050.06%20188.84%2050.06%20188.84%2039.16%20163.62%2039.16'%3e%3c/polygon%3e%3cpolygon%20id='Path'%20fill='%23FFFFFF'%20points='249.43%200.86%20232.19%200.86%20212.96%2020.85%20212.96%200.86%20200.46%200.86%20200.44%2050.06%20212.93%2050.06%20212.96%2039.05%20217.22%2034.82%20232.29%2050.06%20249.26%2050.06%20225.55%2025'%3e%3c/polygon%3e%3cpolygon%20id='Path'%20fill='%23FFFFFF'%20points='76.44%200.86%2063.98%2031.23%2051.58%200.86%2051.56%200.86%2038.24%200.86%2038.23%200.86%2025.82%2031.23%2013.37%200.86%200.09%200.86%2020.67%2050.06%2030.98%2050.06%2044.9%2016.78%2058.82%2050.06%2069.13%2050.06%2089.72%200.86'%3e%3c/polygon%3e%3cpolygon%20id='Path'%20fill='%23FFFFFF'%20points='120.03%200.86%20109.72%200.86%2089.14%2050.06%20102.42%2050.06%20114.87%2019.69%20121.33%203.96'%3e%3c/polygon%3e%3cpolygon%20id='Path'%20fill='%23EDEDED'%20points='121.33%203.96%20114.87%2019.69%20127.28%2050.06%20140.61%2050.06'%3e%3c/polygon%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="Walk Law Firm" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Juridique</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Automatisation intelligente des procédures de recouvrement</h3>
+										<p class="card-text mb-4">Développement d&#x27;un système multi-agents automatisant la gestion des contestations de débiteurs dans le cadre des procédures de recouvrement.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Accélération du traitement des dossiers, homogénéisation des réponses et réduction des tâches répétitives réalisées par les avocats.</p>
+										</div>
+									</div>
+								</div>							</div>
+							<div class="stacking-cards-item pb-4" id="cas-17" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="assets/img/logo-uniwan.svg" alt="Uniwan" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Infogérance</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Assistant IA pour la résolution d&#x27;incidents</h3>
+										<p class="card-text mb-4">Développement d&#x27;un assistant IA destiné aux équipes de support informatique de première et seconde ligne, exploitant les historiques de tickets, les documentations et les architectures clients.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Amélioration de la réactivité du support et réduction d'environ 30 % du temps moyen de prise en charge des tickets.</p>
+										</div>
+									</div>
+								</div>							</div>
+							<div class="stacking-cards-item pb-4" id="cas-18" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="assets/img/logo-idloom.svg" alt="Idloom" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Plateforme SaaS</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Assistant interactif pour simplifier la prise en main et l&#x27;utilisation de logiciels</h3>
+										<p class="card-text mb-4">Développement d&#x27;un assistant IA accompagnant les utilisateurs dans la prise en main du logiciel, capable de naviguer dans l&#x27;interface et d&#x27;exécuter des actions à leur place.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Amélioration significative de la satisfaction client et réduction du temps consacré au support par les collaborateurs.</p>
+										</div>
+									</div>
+								</div>							</div>
+							<div class="stacking-cards-item pb-4" id="cas-19" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="assets/img/logo-sead.webp" alt="Sead" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Plateforme SaaS</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Assistant vocal IA multilingue pour accompagner et sécuriser l&#x27;expérience utilisateur</h3>
+										<p class="card-text mb-4">Développement d&#x27;un assistant vocal multilingue permettant aux utilisateurs d&#x27;interagir naturellement avec la plateforme et d&#x27;obtenir des réponses sur son fonctionnement et la réglementation.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Renforcement de la confiance, de la compréhension des bonnes pratiques de sécurité et de l'utilisation de la plateforme, tout en garantissant la confidentialité des données.</p>
+										</div>
+									</div>
+								</div>							</div>
+							<div class="stacking-cards-item pb-4" id="cas-20" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="assets/img/logo-bo-partner.svg" alt="BO Partner" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Infogérance</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Assistant IA pour la résolution d&#x27;incidents</h3>
+										<p class="card-text mb-4">Développement d&#x27;un assistant IA destiné aux équipes de support informatique de première et seconde ligne, exploitant les historiques de tickets, les documentations et les architectures clients.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Amélioration de la réactivité du support et réduction d'environ 30 % du temps moyen de prise en charge des tickets.</p>
+										</div>
+									</div>
+								</div>							</div>
+							<div class="stacking-cards-item pb-4" id="cas-21" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20206%2032'%3e%3cg%20clip-path='url(%23fclip0_3496_7009)'%20stroke-width='.327'%3e%3cpath%20d='M56.96%207.605V7.44h-9.668V3.92h23.23v3.52h-9.664v19.074H56.96V7.605zM81.775%207.313h-.163v6.789h8.305c1.729%200%203.07-.132%203.98-.626.461-.251.813-.595%201.047-1.06.233-.46.345-1.03.345-1.723%200-.694-.112-1.262-.345-1.72a2.407%202.407%200%2000-1.048-1.05c-.91-.486-2.251-.61-3.978-.61h-8.143zM77.707%203.92h12.837c2.552%200%204.711.308%206.23%201.29%201.504.97%202.41%202.62%202.41%205.386%200%202.074-.7%203.67-1.78%204.773-1.08%201.103-2.55%201.719-4.105%201.812l-.295.018.171.24%206.46%209.071h-4.788l-6.245-8.951-.049-.07h-6.941v9.021h-3.898l-.007-22.59zM122.82%2017.729h.252l-.102-.23-4.523-10.214-.149-.338-.15.338-4.523%2010.214-.102.23h9.297zm1.819%203.619l-.043-.1h-12.672l-.043.099-2.248%205.164h-4.134l10.505-22.59h4.607l10.352%2022.59h-4.107l-2.217-5.163zM148.352%2013.434v0h.002c1.715%200%203.933.003%205.723.805.89.4%201.669.994%202.227%201.884.559.89.904%202.086.904%203.701v.327c0%201.607-.345%202.799-.903%203.684-.559.886-1.338%201.478-2.228%201.875-1.79.799-4.008.801-5.723.801h-4.65c-1.983-.005-3.719-.206-5.08-.79-1.308-.563-2.272-1.48-2.777-2.938l3.629-1.264c.308.686.865%201.104%201.64%201.35.82.26%201.896.332%203.207.332h4.879c1.116%200%202.209-.036%203.022-.44.413-.204.756-.505.994-.94.236-.434.362-.99.362-1.699%200%200%200%200%200%200l.004-.344v-.001c0-.702-.127-1.256-.363-1.69a2.258%202.258%200%2000-.992-.948c-.813-.412-1.905-.46-3.022-.46l-3.805-.059h0-.125c-1.699%200-3.854.002-5.602-.762-.89-.388-1.669-.972-2.226-1.854-.559-.881-.904-2.073-.904-3.69%200-1.615.345-2.813.904-3.703.558-.89%201.338-1.485%202.228-1.884%201.789-.803%204.007-.806%205.722-.806h2.979c1.983.006%203.719.207%205.08.793%201.308.563%202.272%201.48%202.777%202.936l-3.619%201.278c-.308-.684-.864-1.102-1.638-1.348-.818-.26-1.893-.333-3.202-.333h-3.228c-1.115%200-2.209.029-3.021.426a2.194%202.194%200%2000-.995.932c-.236.431-.363.986-.363%201.695%200%20.71.127%201.265.363%201.699.238.435.581.735.994.94.812.402%201.905.437%203.021.437l3.805.059zM165.853%2026.515V3.921h3.897v22.594h-3.897zM190.945%2013.434v0h.003c1.705%200%203.917.003%205.704.805.889.4%201.668.994%202.226%201.884.558.89.903%202.086.903%203.701v.327c0%201.607-.344%202.799-.901%203.684-.556.886-1.333%201.478-2.221%201.875-1.785.799-3.998.801-5.711.801h-4.636c-1.985-.005-3.722-.206-5.083-.79-1.308-.563-2.271-1.48-2.774-2.938l3.626-1.264c.309.686.867%201.104%201.643%201.35.82.26%201.896.332%203.207.332h4.875c1.118%200%202.212-.036%203.025-.44.413-.204.756-.505.994-.94.237-.434.363-.99.363-1.699%200%200%200%200%200%200l.003-.344v-.001c0-.702-.126-1.256-.362-1.69a2.26%202.26%200%2000-.993-.948c-.813-.412-1.906-.46-3.025-.46l-3.805-.059h0-.124c-1.698%200-3.852.002-5.6-.762-.889-.388-1.668-.972-2.226-1.854-.558-.881-.903-2.073-.903-3.69%200-1.615.345-2.813.903-3.703.559-.89%201.338-1.485%202.228-1.884%201.789-.803%204.006-.806%205.719-.806h2.979c1.985.006%203.722.207%205.083.793%201.308.563%202.271%201.48%202.774%202.936l-3.63%201.278c-.309-.684-.866-1.102-1.64-1.348-.818-.26-1.891-.333-3.199-.333h-3.228c-1.117%200-2.211.029-3.025.426a2.196%202.196%200%2000-.994.932c-.237.431-.363.986-.363%201.695%200%20.71.126%201.265.363%201.699.237.435.58.735.993.94.814.402%201.907.437%203.024.437l3.805.059z'/%3e%3c/g%3e%3cpath%20d='M4.09%2012.149l-1.845%201.876a3.132%203.132%200%2000-.883%202.185c0%20.818.317%201.603.883%202.184l7.468%207.596%2010.386-10.564-3.221-3.277H4.09z'/%3e%3cpath%20d='M10.804%2026.726l4.237%204.315a3.026%203.026%200%20002.148.898c.804%200%201.576-.323%202.148-.898l1.845-1.877V16.162L10.803%2026.726z'/%3e%3cpath%20d='M21.295%202.775L19.442.9A3.026%203.026%200%200017.294%200c-.804%200-1.576.323-2.148.899l-9.372%209.533H21.29l.004-7.657z'/%3e%3cpath%20d='M32.416%2013.896l-9.37-9.53v23.437l9.37-9.533c.567-.58.885-1.366.885-2.185%200-.818-.318-1.603-.885-2.184'/%3e%3cdefs%3e%3cclipPath%20id='fclip0_3496_7009'%3e%3cpath%20transform='translate(47.128%203.758)'%20d='M0%200h158.266v22.921H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="Trasis" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Industrie</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Assistant pour renforcer l&#x27;efficacité du support après-vente d&#x27;une multinationale</h3>
+										<p class="card-text mb-4">Développement d&#x27;un assistant IA destiné au support client international, capable de proposer des réponses sourcées, d&#x27;analyser les échanges et de mesurer la satisfaction client.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Réduction du temps de recherche d'informations et réinvestissement du temps gagné dans la proximité et l'engagement client.</p>
+										</div>
+									</div>
+								</div>							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<nav id="cas-nav" class="nav flex-column nav-pills gap-2 sticky-lg-top" style="top: 5rem;" aria-label="Cas d'usage par secteur">
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-14">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"/></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Plateforme SaaS</span>
+									<span class="d-block small">Assistant pour le traitement des demandes RH collaborateurs</span>
+								</span>
+							</a>
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-15">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"/></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Plateforme SaaS</span>
+									<span class="d-block small">Analyse prédictive de l&#x27;e-réputation et des avis clients</span>
+								</span>
+							</a>
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-16">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3v18m7-13l3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2a17 17 0 0 0 8 2h1M5 8l3 8a5 5 0 0 1-6 0zV7m2 14h10"/></g></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Juridique</span>
+									<span class="d-block small">Automatisation intelligente des procédures de recouvrement</span>
+								</span>
+							</a>
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-17">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><path d="M6 6h.01M6 18h.01"/></g></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Infogérance</span>
+									<span class="d-block small">Assistant IA pour la résolution d&#x27;incidents</span>
+								</span>
+							</a>
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-18">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"/></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Plateforme SaaS</span>
+									<span class="d-block small">Assistant interactif pour simplifier la prise en main et l&#x27;utilisation de logiciels</span>
+								</span>
+							</a>
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-19">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"/></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Plateforme SaaS</span>
+									<span class="d-block small">Assistant vocal IA multilingue pour accompagner et sécuriser l&#x27;expérience utilisateur</span>
+								</span>
+							</a>
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-20">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><path d="M6 6h.01M6 18h.01"/></g></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Infogérance</span>
+									<span class="d-block small">Assistant IA pour la résolution d&#x27;incidents</span>
+								</span>
+							</a>
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-21">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"/></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Industrie</span>
+									<span class="d-block small">Assistant pour renforcer l&#x27;efficacité du support après-vente d&#x27;une multinationale</span>
+								</span>
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA final -->
+		<section class="bg-body pt-0" data-bs-theme="dark">
+			<div class="container">
+				<div class="horizon bg-lighter border rounded-4 px-0 pt-6" style="--horizon-rise: 6rem; --horizon-width: 180%;">
+					<div class="starfield" data-starfield="1.2" aria-hidden="true"></div>
+					<div class="row justify-content-center text-center">
+						<div class="col-lg-10">
+							<h2 class="display-5 mb-4">Votre support passe trop de temps à chercher ?</h2>
+							<p class="lead mb-5">Trente minutes pour en parler : nous regardons ensemble ce qui peut être pris en charge, et ce qui doit rester entre les mains de vos équipes.</p>
+							<a href="https://calendly.com/arthur-geeraerd/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg lift shadow mb-4">Quick call</a>
+							<p class="mb-2">Pour démarrer, nous proposons une pré-étude à périmètre défini.</p>
+							<p class="mb-0">Ou écrivez-nous : <a href="mailto:contact@troople.be">contact@troople.be</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer data-bs-theme="dark" class="bg-body">
+		<div class="container py-5">
+	
+			<div class="row g-4 mb-5">
+	
+				<div class="col-6 col-lg-3">
+					<h2 class="label-mono mb-3"><a href="services.html">Services</a></h2>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="services-automatisation-administrative.html">Automatisation administrative</a></li>
+						<li class="mb-2"><a href="services-gestion-connaissance.html">Gestion de la connaissance</a></li>
+						<li class="mb-2"><a href="services-relations-client.html">Relations client</a></li>
+					</ul>
+				</div>
+	
+				<div class="col-6 col-lg-3">
+					<h2 class="label-mono mb-3">Découvrir</h2>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="cas-usage.html">Cas d'usage</a></li>
+					</ul>
+				</div>
+	
+				<div class="col-6 col-lg-3">
+					<h2 class="label-mono mb-3">Contact</h2>
+					<ul class="list-unstyled">
+						<li class="mb-2">Bruxelles, Belgique</li>
+						<li class="mb-2"><a href="mailto:contact@troople.be">contact@troople.be</a></li>
+						<li class="mb-2"><a href="tel:+32497460440">+32 497 460 440</a></li>
+					</ul>
+				</div>
+	
+				<div class="col-6 col-lg-3 text-lg-end">
+					<a class="d-inline-block" href="index.html">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 50" class="" width="180"  aria-hidden="true">
+							<path fill="currentColor" class="text-accent" d="M21.77 50H3.27A3.27 3.27 0 0 1 0 46.71c0-.57.16-1.14.44-1.64L25.4 1.64a3.27 3.27 0 0 1 5.66 0L56 45.07A3.29 3.29 0 0 1 53.18 50h-19.3a3.27 3.27 0 0 1-2.82-4.93l2.93-5.1a2.18 2.18 0 0 1 3.77 0l4.83 8.39a1.09 1.09 0 0 0 1.89 0l5.77-10.04a1.1 1.1 0 0 0-.95-1.64h-9.65a2.18 2.18 0 0 1-1.89-3.28L42.6 25a1.1 1.1 0 0 0-.94-1.64H32a2.18 2.18 0 0 1-2.18-2.2c0-.38.1-.76.3-1.09l4.81-8.39a1.1 1.1 0 0 0-.94-1.64H22.46a1.1 1.1 0 0 0-.95 1.64l4.83 8.4a2.19 2.19 0 0 1-1.89 3.28h-9.64a1.1 1.1 0 0 0-.95 1.64l4.82 8.4a2.2 2.2 0 0 1-1.88 3.28H7.15a1.1 1.1 0 0 0-.94 1.64l5.77 10.04a1.09 1.09 0 0 0 1.88 0l4.82-8.4a2.18 2.18 0 0 1 3.78 0l2.94 5.11A3.29 3.29 0 0 1 22.57 50h-.8Z" />
+							<path fill="currentColor" class="text-contrast-higher" d="M87.22 15.3h-6.75v22.4h-4.39V15.3H69.3v-4.17h17.93v4.17Zm15.22 12.71h-4.16v9.68H93.9V11.13h9.92c4.77 0 8.59 3.8 8.59 8.54a8.49 8.49 0 0 1-5.27 7.7l8.7 10.32h-5.23l-8.16-9.68Zm-4.16-3.9h5.53a4.3 4.3 0 0 0 4.2-4.44 4.3 4.3 0 0 0-4.2-4.44H98.3v8.88Zm20.6.3a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.68 13.68 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3c0 7.7-6.1 13.78-13.85 13.78a13.65 13.65 0 0 1-12.8-8.47 13.74 13.74 0 0 1-1.04-5.31Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.47-9.51v-.01Zm9.77 0a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.67 13.67 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3 13.74 13.74 0 0 1-8.54 12.78 13.66 13.66 0 0 1-5.3 1 13.69 13.69 0 0 1-13.85-13.78Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.46-9.51v-.01Zm29.6-4.74c0 4.7-3.82 8.53-8.67 8.53h-5.45v9.5h-4.39V11.12h9.84c4.85 0 8.66 3.8 8.66 8.54Zm-4.4 0a4.3 4.3 0 0 0-4.27-4.44h-5.45v8.88h5.45c2.4 0 4.27-1.97 4.27-4.44Zm26.7 13.85v4.17H212.1V11.13h4.39v22.39h10.67Zm22.32 0v4.17h-15.64V11.13h15.45v4.18h-11.06v6.9h10.1v4.1h-10.1v7.2h11.26Z" />
+						</svg>					<span class="visually-hidden">Troople, accueil</span>
+					</a>
+				</div>
+	
+			</div>
+	
+			<!-- Copyright -->
+			<div class="d-flex flex-column flex-lg-row justify-content-between gap-2 border-top pt-4 text-center text-lg-start text-contrast-medium">
+				<span>© Troople SRL · BCE 1006.287.601 · Bruxelles. Tous droits réservés.</span>
+				<span>Site réalisé par <a href="https://softedge.be" target="_blank" rel="noreferrer">Softedge</a></span>
+			</div>
+		</div>
+	
+	</footer>
+	
+
+</body>
+
+</html>

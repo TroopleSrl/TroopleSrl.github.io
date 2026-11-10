@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Automatisation des processus administratifs | Troople</title>
+
+    <!-- HTML Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Les tâches administratives répétitives mobilisent un temps important. Nos solutions IA automatisent vos processus, même quand les données sont variées et demandent de l&#x27;interprétation.">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <meta name="author" content="Softedge">
+
+    <link rel="canonical" href="https://troople.be/services/automatisation-processus-administratifs">
+    <link rel="alternate" hreflang="fr" href="https://troople.be/services/automatisation-processus-administratifs">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Automatisation des processus administratifs | Troople",
+            "url": "https://troople.be/services/automatisation-processus-administratifs",
+            "datePublished": "2025-01-07T12:00:00Z",
+            "dateModified": "2025-01-08T08:00:00Z"
+        }
+    </script>
+
+    <!-- Favicon and themes -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Date -->
+    <meta property="article:published_time" content="2025-01-07T12:00:00Z">
+    <meta property="article:modified_time" content="2025-01-08T08:00:00Z">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Automatisation des processus administratifs | Troople">
+    <meta property="og:description" content="Les tâches administratives répétitives mobilisent un temps important. Nos solutions IA automatisent vos processus, même quand les données sont variées et demandent de l&#x27;interprétation.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://troople-system.softedge.dev/assets/img/opengraph.jpg">
+    <meta property="og:url" content="https://troople.be/services/automatisation-processus-administratifs">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content="Automatisation des processus administratifs | Troople">
+    <meta name="twitter:description" content="Les tâches administratives répétitives mobilisent un temps important. Nos solutions IA automatisent vos processus, même quand les données sont variées et demandent de l&#x27;interprétation.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="https://troople.be/services/automatisation-processus-administratifs">
+    <meta property="twitter:image" content="https://troople-system.softedge.dev/assets/img/opengraph.jpg">
+
+    <!-- critical -->
+    <!-- ===================================================================== -->
+    <!-- Critical inline CSS — must be parsed synchronously in <head>          -->
+    <!--                                                                       -->
+    <!--  Page transition (View Transitions API + JS departure curtain)        -->
+    <!--  ------------------------------------------------------------         -->
+    <!--  Departure: page-transition.js mounts .page-curtain (variant-driven)  -->
+    <!--  and slides it in before navigating. Arrival: ::view-transition-new   -->
+    <!--  reveals the new page, targeted per variant via                       -->
+    <!--  :active-view-transition-type(name).                                  -->
+    <!--                                                                       -->
+    <!--  The @view-transition opt-in + animations must live here so they are  -->
+    <!--  present synchronously in <head> (Vite dev serves SCSS as a JS module,-->
+    <!--  which injects styles too late for cross-document VT).                -->
+    <!--                                                                       -->
+    <!--  Variants: curtain (default), fade,                                   -->
+    <!--            slide-up, slide-down, slide-left, slide-right.             -->
+    <!--                                                                       -->
+    <!--  Mirror of src/assets/scss/parent/motions/_page-transition.scss       -->
+    <!--  Edit BOTH files when changing styles.                                -->
+    <!-- ===================================================================== -->
+    <style>
+        @view-transition {
+            navigation: auto;
+        }
+    
+        /* Departure is handled by the JS curtain — hold the old snapshot
+           static until the new page is ready and the reveal plays. */
+        ::view-transition-old(root) {
+            animation: none;
+        }
+    
+        /* Default reveal — asymmetric "curtain" feel: divide rises back up. */
+        ::view-transition-new(root) {
+            animation: vt-reveal-from-bottom 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+    
+        ::view-transition-new(root):active-view-transition-type(slide-down) {
+            animation-name: vt-reveal-from-top;
+        }
+        ::view-transition-new(root):active-view-transition-type(slide-up) {
+            animation-name: vt-reveal-from-bottom;
+        }
+        ::view-transition-new(root):active-view-transition-type(slide-left) {
+            animation-name: vt-reveal-from-right;
+        }
+        ::view-transition-new(root):active-view-transition-type(slide-right) {
+            animation-name: vt-reveal-from-left;
+        }
+    
+        /* Fade — crossfade both old and new */
+        ::view-transition-old(root):active-view-transition-type(fade) {
+            animation: vt-fade-out 0.5s ease-out both;
+        }
+        ::view-transition-new(root):active-view-transition-type(fade) {
+            animation: vt-fade-in 0.5s ease-out both;
+        }
+    
+        ::view-transition-image-pair(root) {
+            background-color: var(--page-transition-curtain, var(--bs-body-bg-darkest));
+        }
+    
+        @keyframes vt-reveal-from-bottom {
+            from { clip-path: inset(100% 0 0 0); }
+            to   { clip-path: inset(0); }
+        }
+        @keyframes vt-reveal-from-top {
+            from { clip-path: inset(0 0 100% 0); }
+            to   { clip-path: inset(0); }
+        }
+        @keyframes vt-reveal-from-right {
+            from { clip-path: inset(0 0 0 100%); }
+            to   { clip-path: inset(0); }
+        }
+        @keyframes vt-reveal-from-left {
+            from { clip-path: inset(0 100% 0 0); }
+            to   { clip-path: inset(0); }
+        }
+        @keyframes vt-fade-in {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+        @keyframes vt-fade-out {
+            from { opacity: 1; }
+            to   { opacity: 0; }
+        }
+    
+        /* JS-driven departure curtain — sits over the page while the current
+           content stays visible underneath. Variant class drives the
+           starting transform / opacity; .is-active animates it to cover. */
+        .page-curtain {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            background-color: var(--page-transition-curtain, var(--bs-body-bg-darkest));
+            pointer-events: none;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+        }
+    
+        .page-curtain--curtain,
+        .page-curtain--slide-down {
+            transform: translateY(-100%);
+            transition-property: transform;
+        }
+        .page-curtain--slide-up {
+            transform: translateY(100%);
+            transition-property: transform;
+        }
+        .page-curtain--slide-left {
+            transform: translateX(100%);
+            transition-property: transform;
+        }
+        .page-curtain--slide-right {
+            transform: translateX(-100%);
+            transition-property: transform;
+        }
+        .page-curtain--fade {
+            opacity: 0;
+            transition-property: opacity;
+        }
+    
+        .page-curtain.is-active {
+            transform: translate(0);
+            opacity: 1;
+        }
+    
+        @media (prefers-reduced-motion: reduce) {
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.01ms;
+            }
+            .page-curtain {
+                transition-duration: 0.01ms;
+            }
+        }
+    </style>
+
+    <!-- CSS -->
+
+  <script type="module" crossorigin src="assets/main.Bx2ynZhg.js"></script>
+  <link rel="stylesheet" crossorigin href="assets/main.C9vMl-Jo.css">
+</head>
+<body data-bs-theme="">
+
+	<header>
+		<nav class="navbar navbar-expand-lg fixed-top hide-nav" aria-label="Navigation principale">
+			<a class="visually-hidden-focusable btn btn-primary position-absolute top-0 start-0 m-2 z-3" href="#theme-main">Aller au contenu</a>
+			<div class="container py-2">
+				<a class="navbar-brand hstack" href="index.html">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 50" class=""  height="32" aria-hidden="true">
+						<path fill="currentColor" class="text-accent" d="M21.77 50H3.27A3.27 3.27 0 0 1 0 46.71c0-.57.16-1.14.44-1.64L25.4 1.64a3.27 3.27 0 0 1 5.66 0L56 45.07A3.29 3.29 0 0 1 53.18 50h-19.3a3.27 3.27 0 0 1-2.82-4.93l2.93-5.1a2.18 2.18 0 0 1 3.77 0l4.83 8.39a1.09 1.09 0 0 0 1.89 0l5.77-10.04a1.1 1.1 0 0 0-.95-1.64h-9.65a2.18 2.18 0 0 1-1.89-3.28L42.6 25a1.1 1.1 0 0 0-.94-1.64H32a2.18 2.18 0 0 1-2.18-2.2c0-.38.1-.76.3-1.09l4.81-8.39a1.1 1.1 0 0 0-.94-1.64H22.46a1.1 1.1 0 0 0-.95 1.64l4.83 8.4a2.19 2.19 0 0 1-1.89 3.28h-9.64a1.1 1.1 0 0 0-.95 1.64l4.82 8.4a2.2 2.2 0 0 1-1.88 3.28H7.15a1.1 1.1 0 0 0-.94 1.64l5.77 10.04a1.09 1.09 0 0 0 1.88 0l4.82-8.4a2.18 2.18 0 0 1 3.78 0l2.94 5.11A3.29 3.29 0 0 1 22.57 50h-.8Z" />
+						<path fill="currentColor" class="text-contrast-higher" d="M87.22 15.3h-6.75v22.4h-4.39V15.3H69.3v-4.17h17.93v4.17Zm15.22 12.71h-4.16v9.68H93.9V11.13h9.92c4.77 0 8.59 3.8 8.59 8.54a8.49 8.49 0 0 1-5.27 7.7l8.7 10.32h-5.23l-8.16-9.68Zm-4.16-3.9h5.53a4.3 4.3 0 0 0 4.2-4.44 4.3 4.3 0 0 0-4.2-4.44H98.3v8.88Zm20.6.3a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.68 13.68 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3c0 7.7-6.1 13.78-13.85 13.78a13.65 13.65 0 0 1-12.8-8.47 13.74 13.74 0 0 1-1.04-5.31Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.47-9.51v-.01Zm9.77 0a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.67 13.67 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3 13.74 13.74 0 0 1-8.54 12.78 13.66 13.66 0 0 1-5.3 1 13.69 13.69 0 0 1-13.85-13.78Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.46-9.51v-.01Zm29.6-4.74c0 4.7-3.82 8.53-8.67 8.53h-5.45v9.5h-4.39V11.12h9.84c4.85 0 8.66 3.8 8.66 8.54Zm-4.4 0a4.3 4.3 0 0 0-4.27-4.44h-5.45v8.88h5.45c2.4 0 4.27-1.97 4.27-4.44Zm26.7 13.85v4.17H212.1V11.13h4.39v22.39h10.67Zm22.32 0v4.17h-15.64V11.13h15.45v4.18h-11.06v6.9h10.1v4.1h-10.1v7.2h11.26Z" />
+					</svg>				<span class="visually-hidden">Troople</span>
+				</a>
+	
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<span class="visually-hidden">
+						Menu
+					</span>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="offcanvas offcanvas-end" data-bs-backdrop="static" data-bs-scroll="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+	
+					<div class="offcanvas-header">
+						<span class="offcanvas-title fs-1 fw-bold" id="offcanvasNavbarLabel">
+							Menu
+						</span>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+	
+					<div class="offcanvas-body d-flex flex-column flex-lg-row">
+	
+						<ul class="navbar-nav navbar-nav-center">
+	
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span>Services</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"/></svg>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="services-automatisation-administrative.html">
+											Automatisation des processus administratifs
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="services-gestion-connaissance.html">
+											Optimisation de la gestion de la connaissance
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="services-relations-client.html">
+											Amélioration de la gestion des relations client
+										</a>
+									</li>
+								</ul>
+							</li>
+	
+							<li class="nav-item">
+								<a class="nav-link" href="cas-usage.html">
+									Cas d'usage
+								</a>
+							</li>
+	
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<span>Industries</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"/></svg>
+								</a>
+								<div class="dropdown-menu dropdown-mega p-2 p-lg-3">
+									<ul class="list-unstyled row row-cols-1 row-cols-lg-3 g-2 mb-0">
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=agricole">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 22L16 8M3.47 12.53L5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94m4-4L9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94m4-4L13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4"/><path d="M11.47 17.47L13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0m4-4L17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0m4-4L21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Agricole</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=association-federale">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Association fédérale</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=construction">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5m0-4a6 6 0 0 1 6 6v3M4 15v-3a6 6 0 0 1 6-6"/><rect width="20" height="4" x="2" y="15" rx="1"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Construction</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=industrie">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"/></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Industrie</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=infogerance">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><path d="M6 6h.01M6 18h.01"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Infogérance</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=juridique">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3v18m7-13l3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2a17 17 0 0 0 8 2h1M5 8l3 8a5 5 0 0 1-6 0zV7m2 14h10"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Juridique</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=saas">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"/></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Plateforme SaaS</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=sante">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676a.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/><path d="M3.22 13H9.5l.5-1l2 4.5l2-7l1.5 3.5h5.27"/></g></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Santé</span>
+											</a>
+										</li>
+										<li class="col">
+											<a class="dropdown-item d-flex align-items-center gap-3 h-100 py-2 border rounded-3" href="cas-usage.html?filtre=public">
+												<span class="avatar avatar-sm fs-6 flex-shrink-0">
+													<span class="avatar-title nav-icon rounded-3"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 18v-7m1.119-8.795a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949zM14 18v-7m4 7v-7M3 22h18M6 18v-7"/></svg></span>
+												</span>
+												<span class="fw-semibold text-contrast-higher">Secteur public</span>
+											</a>
+										</li>
+									</ul>
+									<div class="border-top mt-2 pt-2 px-2 text-end">
+										<a class="small link-body-emphasis link-underline-opacity-0 link-underline-opacity-100-hover" href="cas-usage.html">Tous les cas d'usage <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"/></svg></a>
+									</div>
+								</div>
+							</li>
+	
+						</ul>
+	
+						<div class="d-flex flex-row gap-4 flex-wrap ms-lg-auto">
+	
+							<a class="btn btn-primary order-lg-3 flex-basis-100 flex-basis-lg-auto" href="https://calendly.com/arthur-geeraerd/30min" target="_blank" rel="noopener">
+								Quick call
+							</a>
+	
+						</div>
+	
+					</div>
+	
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main id="theme-main">
+
+		<!-- Hero -->
+		<section id="hero" class="hero bg-body glow glow-center position-relative" data-bs-theme="dark">
+			<div class="pt-stage pt-cover" data-points="hero-tri" data-points-variant="full" data-points-badges="column" data-points-bounds="#hero > .container" aria-hidden="true"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<h1 class="display-3 mb-4">Moins d'encodage, <span class="text-accent">plus de temps pour décider</span></h1>
+						<p class="lead mb-4">Les tâches administratives répétitives mobilisent un temps important. Nos solutions IA automatisent vos processus, même quand les données sont variées et demandent de l'interprétation.</p>
+						<div class="d-flex align-items-center gap-4 flex-wrap">
+							<a href="https://calendly.com/arthur-geeraerd/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Quick call</a>
+							<a class="btn btn-link btn-lg" href="#fonctionnement">Voir comment ça fonctionne <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m7-7l-7 7l-7-7"/></svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Présentation -->
+		<section class="bg-body glow glow-end" data-bs-theme="dark">
+			<div class="container">
+				<div class="row justify-content-center text-center mb-5">
+					<div class="col-lg-9">
+						<h2 class="display-5 mb-4">Un temps important, mobilisé par des tâches répétitives</h2>
+						<p class="lead mb-0">Les tâches administratives répétitives mobilisent un temps important et les outils d'automatisation classiques atteignent leurs limites face à des données variées nécessitant de l'interprétation ou du raisonnement.</p>
+					</div>
+				</div>
+
+				<!-- Tiles: what the agents can do -->
+				<div class="row justify-content-center text-center mb-5">
+					<div class="col-lg-9">
+						<p class="fs-4 text-contrast-higher mb-0">Grâce aux solutions IA de Troople, vos processus composés de plusieurs tâches sont désormais automatisés en faisant intervenir plusieurs agents intelligents qui sont capables :</p>
+					</div>
+				</div>
+				<div class="row g-4 mb-5">
+					<div class="col-md-4">
+						<div class="card card-glass h-100">
+							<div class="card-body d-flex flex-column">
+								<h3 class="card-title mb-4">Collaborer entre eux</h3>
+								<svg class="illustration mt-auto" width="368" height="276" viewBox="0 0 368 276" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+									<path class="il-link" d="M184 64 L86 212 L282 212 Z" stroke-width="1.2" stroke-dasharray="3 5"/>
+									<circle class="il-dot" cx="135" cy="138" r="4"/>
+									<circle class="il-dot" cx="164.4" cy="212" r="4"/>
+									<circle class="il-dot" cx="223.2" cy="123.2" r="4"/>
+									<g class="il-node il-acc"><rect x="158" y="38" width="52" height="52" rx="14.6"/><g transform="translate(172.6 52.6) scale(0.953)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2m16 0h2m-7-1v2m-6-2v2"/></g></g></g>
+									<g class="il-node"><rect x="60" y="186" width="52" height="52" rx="14.6"/><g transform="translate(74.6 200.6) scale(0.953)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2m16 0h2m-7-1v2m-6-2v2"/></g></g></g>
+									<g class="il-node"><rect x="256" y="186" width="52" height="52" rx="14.6"/><g transform="translate(270.6 200.6) scale(0.953)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2m16 0h2m-7-1v2m-6-2v2"/></g></g></g>
+									<text class="il-cap" x="184" y="112" text-anchor="middle">lecture</text>
+									<text class="il-cap" x="86" y="260" text-anchor="middle">contrôle</text>
+									<text class="il-cap" x="282" y="260" text-anchor="middle">saisie</text>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card card-glass h-100">
+							<div class="card-body d-flex flex-column">
+								<h3 class="card-title mb-4">Échanger avec différents interlocuteurs</h3>
+								<svg class="illustration mt-auto" width="368" height="276" viewBox="0 0 368 276" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+									<path class="il-link" d="M184 130 L64 64" stroke-width="1.2" stroke-dasharray="3 4"/>
+									<path class="il-link" d="M184 130 L304 64" stroke-width="1.2" stroke-dasharray="3 4"/>
+									<path class="il-link" d="M184 130 L64 196" stroke-width="1.2" stroke-dasharray="3 4"/>
+									<path class="il-link" d="M184 130 L304 196" stroke-width="1.2" stroke-dasharray="3 4"/>
+									<g class="il-node"><rect x="41" y="41" width="46" height="46" rx="12.9"/><g transform="translate(53.9 53.9) scale(0.843)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g></g></g>
+									<text class="il-cap" x="64" y="104" text-anchor="middle">demandeur</text>
+									<g class="il-node"><rect x="281" y="41" width="46" height="46" rx="12.9"/><g transform="translate(293.9 53.9) scale(0.843)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1"><path d="M10 12h4m-4-4h4m0 13v-3a2 2 0 0 0-4 0v3"/><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/></g></g></g>
+									<text class="il-cap" x="304" y="104" text-anchor="middle">fournisseur</text>
+									<g class="il-node"><rect x="41" y="173" width="46" height="46" rx="12.9"/><g transform="translate(53.9 185.9) scale(0.843)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1"><path d="m16 11l2 2l4-4m-6 12v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></g></g></g>
+									<text class="il-cap" x="64" y="236" text-anchor="middle">manager</text>
+									<g class="il-node"><rect x="281" y="173" width="46" height="46" rx="12.9"/><g transform="translate(293.9 185.9) scale(0.843)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1"><path d="M12 17V7m4 1h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"/><path d="M4 3a1 1 0 0 1 1-1a1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1a1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2a1 1 0 0 1-1-1z"/></g></g></g>
+									<text class="il-cap" x="304" y="236" text-anchor="middle">comptabilité</text>
+									<circle class="il-dot" cx="124" cy="97" r="3.5"/>
+									<circle class="il-dot" cx="250" cy="166" r="3.5"/>
+									<g class="il-node il-acc"><rect x="153" y="99" width="62" height="62" rx="17.4"/><g transform="translate(170.4 116.4) scale(1.137)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2m16 0h2m-7-1v2m-6-2v2"/></g></g></g>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card card-glass h-100">
+							<div class="card-body d-flex flex-column">
+								<h3 class="card-title mb-4">Décider de manière autonome</h3>
+								<svg class="illustration mt-auto" width="368" height="276" viewBox="0 0 368 276" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+									<path class="il-link il-acc" d="M80 138 L150 138" stroke-width="1.5"/>
+									<path class="il-link il-acc" d="M178 138 C 220 138, 220 70, 270 70" stroke-width="1.5"/>
+									<path class="il-link" d="M178 138 C 220 138, 220 206, 270 206" stroke-width="1.5" stroke-dasharray="3 4"/>
+									<g class="il-node"><rect x="33" y="115" width="46" height="46" rx="12.9"/><g transform="translate(45.9 127.9) scale(0.843)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"/></g></g></g>
+									<g class="il-node il-acc"><rect x="150" y="124" width="28" height="28" rx="6" transform="rotate(45 164 138)"/></g>
+									<g class="il-node il-acc"><rect x="276" y="46" width="48" height="48" rx="13.4"/><g transform="translate(289.4 59.4) scale(0.88)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12l2 2l4-4"/></g></g></g>
+									<text class="il-cap" x="300" y="112" text-anchor="middle">validé</text>
+									<g class="il-node il-warn"><rect x="276" y="182" width="48" height="48" rx="13.4"/><g transform="translate(289.4 195.4) scale(0.88)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m16 11l2 2l4-4m-6 12v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></g></g></g>
+									<text class="il-cap" x="300" y="248" text-anchor="middle">manager</text>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center text-center">
+					<div class="col-lg-9">
+						<p class="lead mb-0">Ces solutions peuvent orchestrer plusieurs processus et intervenants, jusqu'à créer de véritables collaborateurs virtuels capables de prendre en charge des missions complètes, de fiabiliser le traitement de l'information et de libérer du temps pour des activités à plus forte valeur ajoutée.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Technologie : comment ça fonctionne -->
+		<section id="fonctionnement" class="glow glow-top-end glow-bottom-start glow-circle">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-lg-8">
+						<h2 class="display-5 mb-4">Une demande, quatre étapes, une action</h2>
+						<p class="lead mb-0">Par exemple, une demande d'achat : elle traverse quatre étapes, et chacune enrichit le dossier d'une information ou d'une action.</p>
+					</div>
+				</div>
+
+				<div class="nav nav-pills nav-pills-surface flex-column flex-md-row gap-2 mb-4" role="tablist" aria-label="Les quatre étapes">
+					<button type="button" class="nav-link flex-fill d-flex align-items-center gap-3 text-start active" id="etape-h-tab-reception" data-bs-toggle="pill" data-bs-target="#etape-h-reception" role="tab" aria-controls="etape-h-reception" aria-selected="true">
+						<span class="step-num">1</span><span class="fs-5">Réception</span>
+					</button>
+					<button type="button" class="nav-link flex-fill d-flex align-items-center gap-3 text-start" id="etape-h-tab-analyse" data-bs-toggle="pill" data-bs-target="#etape-h-analyse" role="tab" aria-controls="etape-h-analyse" aria-selected="false">
+						<span class="step-num">2</span><span class="fs-5">Analyse IA</span>
+					</button>
+					<button type="button" class="nav-link flex-fill d-flex align-items-center gap-3 text-start" id="etape-h-tab-controle" data-bs-toggle="pill" data-bs-target="#etape-h-controle" role="tab" aria-controls="etape-h-controle" aria-selected="false">
+						<span class="step-num">3</span><span class="fs-5">Contrôle</span>
+					</button>
+					<button type="button" class="nav-link flex-fill d-flex align-items-center gap-3 text-start" id="etape-h-tab-action" data-bs-toggle="pill" data-bs-target="#etape-h-action" role="tab" aria-controls="etape-h-action" aria-selected="false">
+						<span class="step-num">4</span><span class="fs-5">Action</span>
+					</button>
+				</div>
+				<div class="tab-content mb-5">
+					<div class="tab-pane fade show active" id="etape-h-reception" role="tabpanel" aria-labelledby="etape-h-tab-reception" tabindex="0">
+						<div class="card card-surface">
+							<div class="card-body">
+								<div class="row g-4 align-items-center">
+									<div class="col-lg-5">
+										<h3 class="card-title mb-3">Réception</h3>
+										<p class="card-text mb-0">La demande parvient au service achats. Elle est enregistrée et un dossier centralisé est créé : tout ce qui suit s'y ajoute.</p>
+									</div>
+									<div class="col-lg-7">
+										<svg class="illustration " width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+											<path class="il-link" d="M96 90 C 220 90, 240 180, 346 180" stroke-width="1.2" stroke-dasharray="3 4"/>
+											<path class="il-link" d="M96 180 C 220 180, 240 180, 346 180" stroke-width="1.2" stroke-dasharray="3 4"/>
+											<path class="il-link" d="M96 270 C 220 270, 240 180, 346 180" stroke-width="1.2" stroke-dasharray="3 4"/>
+											<g class="il-node"><rect x="46" y="66" width="48" height="48" rx="13.4"/><g transform="translate(59.4 79.4) scale(0.88)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect width="20" height="16" x="2" y="4" rx="2"/></g></g></g>
+											<g class="il-node"><rect x="46" y="156" width="48" height="48" rx="13.4"/><g transform="translate(59.4 169.4) scale(0.88)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"/></g></g></g>
+											<g class="il-node"><rect x="46" y="246" width="48" height="48" rx="13.4"/><g transform="translate(59.4 259.4) scale(0.88)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></g></g>
+											<path class="il-link il-acc" d="M414 180 L486 180" stroke-width="1.5"/>
+											<g class="il-node"><rect x="348" y="148" width="64" height="64" rx="17.9"/><g transform="translate(365.9 165.9) scale(1.173)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11"/></g></g></g>
+											<g class="il-node il-acc"><rect x="488" y="138" width="84" height="84" rx="23.5"/><g transform="translate(511.5 161.5) scale(1.54)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1" d="m6 14l1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></g></g>
+											<text class="il-cap" x="380" y="232" text-anchor="middle">demande enregistrée</text>
+											<text class="il-cap il-acc" x="530" y="246" text-anchor="middle">dossier centralisé</text>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="etape-h-analyse" role="tabpanel" aria-labelledby="etape-h-tab-analyse" tabindex="0">
+						<div class="card card-surface">
+							<div class="card-body">
+								<div class="row g-4 align-items-center">
+									<div class="col-lg-5">
+										<h3 class="card-title mb-3">Analyse IA</h3>
+										<p class="card-text mb-0">Le besoin est écrit librement, sans formulaire imposé. L'IA le lit et en tire les informations dont le processus a besoin.</p>
+									</div>
+									<div class="col-lg-7">
+										<svg class="illustration " width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+											<path class="il-link" d="M110 180 L222 180" stroke-width="1.5"/>
+											<path class="il-link il-acc" d="M298 180 C 380 180, 380 84, 470 84" stroke-width="1.3"/>
+											<path class="il-link il-acc" d="M298 180 C 380 180, 380 148, 470 148" stroke-width="1.3"/>
+											<path class="il-link il-acc" d="M298 180 C 380 180, 380 212, 470 212" stroke-width="1.3"/>
+											<path class="il-link il-acc" d="M298 180 C 380 180, 380 276, 470 276" stroke-width="1.3"/>
+											<g class="il-node"><rect x="52" y="152" width="56" height="56" rx="15.7"/><g transform="translate(67.7 167.7) scale(1.027)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></g></g>
+											<text class="il-cap" x="80" y="228" text-anchor="middle">texte libre</text>
+											<g class="il-node il-acc"><rect x="224" y="144" width="72" height="72" rx="20.2"/><g transform="translate(244.2 164.2) scale(1.32)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M3 7V5a2 2 0 0 1 2-2h2m10 0h2a2 2 0 0 1 2 2v2m0 10v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2m4-9h8m-8 4h10M7 16h6"/></g></g>
+											<text class="il-cap il-acc" x="260" y="236" text-anchor="middle">lecture IA</text>
+											<g class="il-pill"><rect x="492.5" y="70" width="75" height="28" rx="14"/><text x="530" y="88.3" text-anchor="middle">article</text></g>
+											<g class="il-pill"><rect x="489.1" y="134" width="81.8" height="28" rx="14"/><text x="530" y="152.3" text-anchor="middle">quantité</text></g>
+											<g class="il-pill"><rect x="495.9" y="198" width="68.3" height="28" rx="14"/><text x="530" y="216.3" text-anchor="middle">budget</text></g>
+											<g class="il-pill"><rect x="499.2" y="262" width="61.6" height="28" rx="14"/><text x="530" y="280.3" text-anchor="middle">délai</text></g>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="etape-h-controle" role="tabpanel" aria-labelledby="etape-h-tab-controle" tabindex="0">
+						<div class="card card-surface">
+							<div class="card-body">
+								<div class="row g-4 align-items-center">
+									<div class="col-lg-5">
+										<h3 class="card-title mb-3">Contrôle</h3>
+										<p class="card-text mb-0">Les règles de votre organisation sont appliquées au dossier. Ce qui est conforme passe, ce qui demande une décision est signalé.</p>
+									</div>
+									<div class="col-lg-7">
+										<svg class="illustration " width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+											<path class="il-link il-acc" d="M40 90 L290 90" stroke-width="1.3"/>
+											<path class="il-link il-acc" d="M350 90 L540 90" stroke-width="1.3"/>
+											<path class="il-link il-acc" d="M40 150 L290 150" stroke-width="1.3"/>
+											<path class="il-link il-acc" d="M350 150 L540 150" stroke-width="1.3"/>
+											<path class="il-link il-acc" d="M40 210 L290 210" stroke-width="1.3"/>
+											<path class="il-link il-acc" d="M350 210 L540 210" stroke-width="1.3"/>
+											<path class="il-link il-acc" d="M40 270 L290 270" stroke-width="1.3"/>
+											<path class="il-link il-warn" d="M350 270 C 420 270, 440 316, 520 316" stroke-width="1.3" stroke-dasharray="3 4"/>
+											<g class="il-node"><rect x="22" y="72" width="36" height="36" rx="10.1"/><g transform="translate(32.1 82.1) scale(0.66)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"/></g></g></g>
+											<g class="il-node il-acc"><rect x="540" y="70" width="40" height="40" rx="11.2"/><g transform="translate(551.2 81.2) scale(0.733)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="m9 12l2 2l4-4"/></g></g></g>
+											<g class="il-node"><rect x="22" y="132" width="36" height="36" rx="10.1"/><g transform="translate(32.1 142.1) scale(0.66)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"/></g></g></g>
+											<g class="il-node il-acc"><rect x="540" y="130" width="40" height="40" rx="11.2"/><g transform="translate(551.2 141.2) scale(0.733)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="m9 12l2 2l4-4"/></g></g></g>
+											<g class="il-node"><rect x="22" y="192" width="36" height="36" rx="10.1"/><g transform="translate(32.1 202.1) scale(0.66)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"/></g></g></g>
+											<g class="il-node il-acc"><rect x="540" y="190" width="40" height="40" rx="11.2"/><g transform="translate(551.2 201.2) scale(0.733)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="m9 12l2 2l4-4"/></g></g></g>
+											<g class="il-node"><rect x="22" y="252" width="36" height="36" rx="10.1"/><g transform="translate(32.1 262.1) scale(0.66)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10 9H8m8 4H8m8 4H8"/></g></g></g>
+											<g class="il-node il-gate"><rect x="296" y="54" width="48" height="252" rx="24"/></g>
+											<g class="il-node il-acc"><g transform="translate(308 168) scale(1)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12l2 2l4-4"/></g></g></g>
+											<g class="il-node il-warn"><rect x="540" y="296" width="40" height="40" rx="11.2"/><g transform="translate(551.2 307.2) scale(0.733)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="m21.73 18l-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3M12 9v4m0 4h.01"/></g></g>
+											<text class="il-cap" x="320" y="330" text-anchor="middle">vos règles</text>
+											<text class="il-cap il-warn" x="470" y="340" text-anchor="middle">à décider</text>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="etape-h-action" role="tabpanel" aria-labelledby="etape-h-tab-action" tabindex="0">
+						<div class="card card-surface">
+							<div class="card-body">
+								<div class="row g-4 align-items-center">
+									<div class="col-lg-5">
+										<h3 class="card-title mb-3">Action</h3>
+										<p class="card-text mb-0">Le dossier contrôlé rejoint vos outils internes. La demande est créée dans l'ERP et le manager est notifié : la décision lui revient.</p>
+									</div>
+									<div class="col-lg-7">
+										<svg class="illustration " width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+											<path class="il-link il-acc" d="M124 180 L260 180" stroke-width="1.5"/>
+											<circle class="il-dot" cx="170" cy="180" r="3.5"/>
+											<circle class="il-dot" cx="210" cy="180" r="3.5"/>
+											<path class="il-link il-acc" d="M260 180 C 330 180, 330 100, 426 100" stroke-width="1.5"/>
+											<path class="il-link il-acc" d="M260 180 C 330 180, 330 260, 426 260" stroke-width="1.5"/>
+											<g class="il-node il-acc"><rect x="58" y="148" width="64" height="64" rx="17.9"/><g transform="translate(75.9 165.9) scale(1.173)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 14l1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></g></g>
+											<text class="il-cap" x="90" y="232" text-anchor="middle">dossier contrôlé</text>
+											<g class="il-node il-acc"><rect x="428" y="68" width="64" height="64" rx="17.9"/><g transform="translate(445.9 85.9) scale(1.173)"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></g></g></g>
+											<text class="il-cap" x="460" y="152" text-anchor="middle">ERP · demande créée</text>
+											<g class="il-node il-acc"><rect x="428" y="228" width="64" height="64" rx="17.9"/><g transform="translate(445.9 245.9) scale(1.173)"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.268 21a2 2 0 0 0 3.464 0m-10.47-5.674A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></g></g>
+											<text class="il-cap" x="460" y="312" text-anchor="middle">manager notifié</text>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="callout rounded p-3 p-lg-4 mb-5">
+					<p class="callout-title d-flex align-items-center gap-2 mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12l2 2l4-4"/></g></svg> Demande traitée, validation humaine conservée.</p>
+				</div>
+
+				<div class="d-flex align-items-center justify-content-end gap-4 flex-wrap text-end">
+					<p class="mb-0">Décrivez-nous un processus qui vous coûte du temps, nous vous dirons ce qui peut être automatisé.</p>
+					<a href="https://calendly.com/arthur-geeraerd/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Quick call</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Cas d'usage -->
+		<section id="cas-concrets" class="bg-body glow glow-top-start" data-bs-theme="dark">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-lg-8">
+						<h2 class="display-5 mb-4">À quoi ça ressemble en pratique</h2>
+						<p class="lead mb-0">Les réalisations ci-dessous illustrent la capacité de Troople à concevoir des collaborateurs virtuels et des systèmes multi-agents capables de prendre en charge des processus administratifs complets : comprendre une demande, analyser des documents, échanger avec différents interlocuteurs, appliquer des règles métier, prendre des décisions et déclencher automatiquement les actions nécessaires.</p>
+					</div>
+				</div>
+
+				<div class="row g-5">
+
+					<div class="col-lg-8" data-sticky-spy="#cas-nav">
+						<div class="stacking-cards" style="--stacking-cards-gap: 1.5rem;">
+							<div class="stacking-cards-item pb-4" id="cas-juridique" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20width='250px'%20height='51px'%20viewBox='0%200%20250%2051'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3ctitle%3eWALK_white_noBASELINE%3c/title%3e%3cg%20id='Page-1'%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%3e%3cg%20id='WALK_white_noBASELINE'%20fill-rule='nonzero'%3e%3cpolygon%20id='Path'%20fill='%23FFFFFF'%20points='163.62%200.86%20151.16%200.86%20151.16%2050.06%20188.84%2050.06%20188.84%2039.16%20163.62%2039.16'%3e%3c/polygon%3e%3cpolygon%20id='Path'%20fill='%23FFFFFF'%20points='249.43%200.86%20232.19%200.86%20212.96%2020.85%20212.96%200.86%20200.46%200.86%20200.44%2050.06%20212.93%2050.06%20212.96%2039.05%20217.22%2034.82%20232.29%2050.06%20249.26%2050.06%20225.55%2025'%3e%3c/polygon%3e%3cpolygon%20id='Path'%20fill='%23FFFFFF'%20points='76.44%200.86%2063.98%2031.23%2051.58%200.86%2051.56%200.86%2038.24%200.86%2038.23%200.86%2025.82%2031.23%2013.37%200.86%200.09%200.86%2020.67%2050.06%2030.98%2050.06%2044.9%2016.78%2058.82%2050.06%2069.13%2050.06%2089.72%200.86'%3e%3c/polygon%3e%3cpolygon%20id='Path'%20fill='%23FFFFFF'%20points='120.03%200.86%20109.72%200.86%2089.14%2050.06%20102.42%2050.06%20114.87%2019.69%20121.33%203.96'%3e%3c/polygon%3e%3cpolygon%20id='Path'%20fill='%23EDEDED'%20points='121.33%203.96%20114.87%2019.69%20127.28%2050.06%20140.61%2050.06'%3e%3c/polygon%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="Walk Law Firm" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Juridique</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Automatisation de la gestion des demandes clients</h3>
+										<p class="card-text mb-4">Conception d&#x27;un système multi-agents qui analyse les demandes des clients, identifie leur besoin juridique, organise automatiquement les rendez-vous avec les avocats compétents et pré-rédige certains contrats (pactes d&#x27;actionnaires, baux commerciaux…). Le système tient compte des disponibilités des avocats et assure la cohérence des documents générés.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Automatisation des premières étapes du traitement des dossiers, gain de temps pour les avocats et augmentation de la capacité du cabinet à traiter de nouveaux clients.</p>
+										</div>
+									</div>
+								</div>							</div>
+							<div class="stacking-cards-item pb-4" id="cas-sante" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="assets/img/logo-jadbot.webp" alt="Jadbot" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Santé</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Automatisation de la transmission des interventions</h3>
+										<p class="card-text mb-4">Développement d&#x27;un assistant multi-agents qui analyse les notes vocales du personnel soignant et identifie automatiquement les actions à réaliser. Il transmet ensuite chaque demande au service concerné : médical, maintenance, restauration, etc.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Automatisation de la coordination entre les différents services, réduction des tâches administratives et accélération de l'exécution des interventions.</p>
+										</div>
+									</div>
+								</div>							</div>
+							<div class="stacking-cards-item pb-4" id="cas-agricole" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="assets/img/logo-eleveo.webp" alt="Elévéo" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Agricole</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Automatisation du traitement des documents et des factures</h3>
+										<p class="card-text mb-4">Création d&#x27;un assistant multi-agents qui extrait et encode automatiquement les informations provenant de factures et de documents agricoles, quels que soient leur format et leur présentation. Il identifie également les articles et les rattache à une nomenclature interne afin de permettre des analyses financières détaillées. L&#x27;ensemble fonctionne sur des modèles d&#x27;IA hébergés en interne.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Réduction massive du temps de traitement administratif et amélioration de la qualité des analyses financières et du conseil aux agriculteurs.</p>
+										</div>
+									</div>
+								</div>							</div>
+							<div class="stacking-cards-item pb-4" id="cas-public" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="assets/img/logo-crac.webp" alt="CRAC" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Secteur public</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Automatisation du contrôle et de la conformité documentaire</h3>
+										<p class="card-text mb-4">Développement d&#x27;un assistant multi-agents qui analyse automatiquement les documents émis par une administration afin de vérifier leur conformité réglementaire et le respect des règles budgétaires internes. Les agents appliquent des règles de contrôle personnalisables et identifient les éventuelles erreurs ou anomalies.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Automatisation des opérations de vérification, réduction du temps de relecture et de correction et amélioration de la fiabilité des contrôles.</p>
+										</div>
+									</div>
+								</div>							</div>
+							<div class="stacking-cards-item pb-4" id="cas-construction" style="scroll-margin-top: 5rem;">
+								<div class="card h-100">
+									<div class="card-body">
+										<div class="d-flex align-items-center gap-3 mb-4">
+											<img class="cas-logo me-auto" src="assets/img/logo-moury-construct.svg" alt="Gilles Moury" height="40">
+											<div class="d-flex flex-wrap justify-content-end gap-2 ms-auto">
+												<span class="badge badge-lg bg-accent-subtle text-accent-emphasis">Construction</span>
+												
+											</div>
+										</div>
+										<h3 class="card-title fs-1 fw-normal mb-3">Automatisation de la gestion administrative des travailleurs</h3>
+										<p class="card-text mb-4">Conception d&#x27;une plateforme multi-agents qui collecte et analyse automatiquement les documents transmis par les sous-traitants, vérifie la validité des permis de travail (A1, Limosa) et contrôle leur conformité avec la présence effective des travailleurs sur chantier. Le système interroge directement les bases de la sécurité sociale belge (ONSS) via API. Les données sont traitées et hébergées en interne pour garantir leur confidentialité.</p>
+										<div class="callout rounded p-3 p-lg-4">
+											<h4 class="callout-title h6 d-flex align-items-center gap-2 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 7h6v6"/><path d="m22 7l-8.5 8.5l-5-5L2 17"/></g></svg> Bénéfices</h4>
+											<p>Automatisation du contrôle administratif des travailleurs, réduction des tâches manuelles et sécurisation de la conformité réglementaire.</p>
+										</div>
+									</div>
+								</div>							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<nav id="cas-nav" class="nav flex-column nav-pills gap-2 sticky-lg-top" style="top: 5rem;" aria-label="Cas d'usage par secteur">
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-juridique">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3v18m7-13l3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2a17 17 0 0 0 8 2h1M5 8l3 8a5 5 0 0 1-6 0zV7m2 14h10"/></g></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Juridique</span>
+									<span class="d-block small">Automatisation de la gestion des demandes clients</span>
+								</span>
+							</a>
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-sante">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676a.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/><path d="M3.22 13H9.5l.5-1l2 4.5l2-7l1.5 3.5h5.27"/></g></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Santé</span>
+									<span class="d-block small">Automatisation de la transmission des interventions</span>
+								</span>
+							</a>
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-agricole">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 22L16 8M3.47 12.53L5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94m4-4L9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94m4-4L13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4"/><path d="M11.47 17.47L13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0m4-4L17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0m4-4L21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0"/></g></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Agricole</span>
+									<span class="d-block small">Automatisation du traitement des documents et des factures</span>
+								</span>
+							</a>
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-public">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 18v-7m1.119-8.795a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949zM14 18v-7m4 7v-7M3 22h18M6 18v-7"/></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Secteur public</span>
+									<span class="d-block small">Automatisation du contrôle et de la conformité documentaire</span>
+								</span>
+							</a>
+							<a class="nav-link d-flex align-items-center gap-3" href="#cas-construction">
+								<span class="avatar flex-shrink-0">
+									<span class="avatar-title nav-icon rounded-4 fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5m0-4a6 6 0 0 1 6 6v3M4 15v-3a6 6 0 0 1 6-6"/><rect width="20" height="4" x="2" y="15" rx="1"/></g></svg></span>
+								</span>
+								<span>
+									<span class="d-block fs-5 fw-semibold">Construction</span>
+									<span class="d-block small">Automatisation de la gestion administrative des travailleurs</span>
+								</span>
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA final -->
+		<section class="bg-body pt-0" data-bs-theme="dark">
+			<div class="container">
+				<div class="horizon bg-lighter border rounded-4 px-0 pt-6" style="--horizon-rise: 6rem; --horizon-width: 180%;">
+					<div class="starfield" data-starfield="1.2" aria-hidden="true"></div>
+					<div class="row justify-content-center text-center">
+						<div class="col-lg-10">
+							<h2 class="display-5 mb-4">Un processus vous prend trop de temps ?</h2>
+							<p class="lead mb-5">Trente minutes pour en parler : nous regardons ensemble ce qui peut être automatisé, et ce qui ne vaut pas la peine de l'être.</p>
+							<a href="https://calendly.com/arthur-geeraerd/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg lift shadow mb-4">Quick call</a>
+							<p class="mb-2">Pour démarrer, nous proposons une pré-étude à périmètre défini.</p>
+							<p class="mb-0">Ou écrivez-nous : <a href="mailto:contact@troople.be">contact@troople.be</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer data-bs-theme="dark" class="bg-body">
+		<div class="container py-5">
+	
+			<div class="row g-4 mb-5">
+	
+				<div class="col-6 col-lg-3">
+					<h2 class="label-mono mb-3"><a href="services.html">Services</a></h2>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="services-automatisation-administrative.html">Automatisation administrative</a></li>
+						<li class="mb-2"><a href="services-gestion-connaissance.html">Gestion de la connaissance</a></li>
+						<li class="mb-2"><a href="services-relations-client.html">Relations client</a></li>
+					</ul>
+				</div>
+	
+				<div class="col-6 col-lg-3">
+					<h2 class="label-mono mb-3">Découvrir</h2>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="cas-usage.html">Cas d'usage</a></li>
+					</ul>
+				</div>
+	
+				<div class="col-6 col-lg-3">
+					<h2 class="label-mono mb-3">Contact</h2>
+					<ul class="list-unstyled">
+						<li class="mb-2">Bruxelles, Belgique</li>
+						<li class="mb-2"><a href="mailto:contact@troople.be">contact@troople.be</a></li>
+						<li class="mb-2"><a href="tel:+32497460440">+32 497 460 440</a></li>
+					</ul>
+				</div>
+	
+				<div class="col-6 col-lg-3 text-lg-end">
+					<a class="d-inline-block" href="index.html">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 50" class="" width="180"  aria-hidden="true">
+							<path fill="currentColor" class="text-accent" d="M21.77 50H3.27A3.27 3.27 0 0 1 0 46.71c0-.57.16-1.14.44-1.64L25.4 1.64a3.27 3.27 0 0 1 5.66 0L56 45.07A3.29 3.29 0 0 1 53.18 50h-19.3a3.27 3.27 0 0 1-2.82-4.93l2.93-5.1a2.18 2.18 0 0 1 3.77 0l4.83 8.39a1.09 1.09 0 0 0 1.89 0l5.77-10.04a1.1 1.1 0 0 0-.95-1.64h-9.65a2.18 2.18 0 0 1-1.89-3.28L42.6 25a1.1 1.1 0 0 0-.94-1.64H32a2.18 2.18 0 0 1-2.18-2.2c0-.38.1-.76.3-1.09l4.81-8.39a1.1 1.1 0 0 0-.94-1.64H22.46a1.1 1.1 0 0 0-.95 1.64l4.83 8.4a2.19 2.19 0 0 1-1.89 3.28h-9.64a1.1 1.1 0 0 0-.95 1.64l4.82 8.4a2.2 2.2 0 0 1-1.88 3.28H7.15a1.1 1.1 0 0 0-.94 1.64l5.77 10.04a1.09 1.09 0 0 0 1.88 0l4.82-8.4a2.18 2.18 0 0 1 3.78 0l2.94 5.11A3.29 3.29 0 0 1 22.57 50h-.8Z" />
+							<path fill="currentColor" class="text-contrast-higher" d="M87.22 15.3h-6.75v22.4h-4.39V15.3H69.3v-4.17h17.93v4.17Zm15.22 12.71h-4.16v9.68H93.9V11.13h9.92c4.77 0 8.59 3.8 8.59 8.54a8.49 8.49 0 0 1-5.27 7.7l8.7 10.32h-5.23l-8.16-9.68Zm-4.16-3.9h5.53a4.3 4.3 0 0 0 4.2-4.44 4.3 4.3 0 0 0-4.2-4.44H98.3v8.88Zm20.6.3a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.68 13.68 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3c0 7.7-6.1 13.78-13.85 13.78a13.65 13.65 0 0 1-12.8-8.47 13.74 13.74 0 0 1-1.04-5.31Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.47-9.51v-.01Zm9.77 0a13.77 13.77 0 0 1 8.55-12.76 13.67 13.67 0 0 1 5.3-1.01 13.67 13.67 0 0 1 12.8 8.47 13.94 13.94 0 0 1 1.04 5.3 13.74 13.74 0 0 1-8.54 12.78 13.66 13.66 0 0 1-5.3 1 13.69 13.69 0 0 1-13.85-13.78Zm23.3 0a9.3 9.3 0 0 0-9.46-9.52 9.3 9.3 0 0 0-9.46 9.52 9.3 9.3 0 0 0 9.46 9.52 9.3 9.3 0 0 0 9.46-9.51v-.01Zm29.6-4.74c0 4.7-3.82 8.53-8.67 8.53h-5.45v9.5h-4.39V11.12h9.84c4.85 0 8.66 3.8 8.66 8.54Zm-4.4 0a4.3 4.3 0 0 0-4.27-4.44h-5.45v8.88h5.45c2.4 0 4.27-1.97 4.27-4.44Zm26.7 13.85v4.17H212.1V11.13h4.39v22.39h10.67Zm22.32 0v4.17h-15.64V11.13h15.45v4.18h-11.06v6.9h10.1v4.1h-10.1v7.2h11.26Z" />
+						</svg>					<span class="visually-hidden">Troople, accueil</span>
+					</a>
+				</div>
+	
+			</div>
+	
+			<!-- Copyright -->
+			<div class="d-flex flex-column flex-lg-row justify-content-between gap-2 border-top pt-4 text-center text-lg-start text-contrast-medium">
+				<span>© Troople SRL · BCE 1006.287.601 · Bruxelles. Tous droits réservés.</span>
+				<span>Site réalisé par <a href="https://softedge.be" target="_blank" rel="noreferrer">Softedge</a></span>
+			</div>
+		</div>
+	
+	</footer>
+	
+
+</body>
+
+</html>

@@ -16,21 +16,21 @@ function initializeCard() {
         if (customImagePath) {
             cardImage.src = `/${customImagePath}`;
         } else {
-            cardImage.src = `/assets/img/cards/${cardName}.png`;
+            cardImage.src = `/v1/assets/img/cards/${cardName}.png`;
         }
         cardImage.alt = `${cardName.charAt(0).toUpperCase() + cardName.slice(1)} Business Card`;
 
         // Update fallback image in onerror
         cardImage.onerror = function () {
-            this.src = `/assets/img/team/${cardName}.jpg`;
+            this.src = `/v1/assets/img/team/${cardName}.jpg`;
             this.onerror = function () {
-                this.src = `/assets/img/team/TRO_TeamPictures_${cardName.charAt(0).toUpperCase() + cardName.slice(1)}.jpg`;
+                this.src = `/v1/assets/img/team/TRO_TeamPictures_${cardName.charAt(0).toUpperCase() + cardName.slice(1)}.jpg`;
                 this.onerror = null; // Prevent infinite loop
             };
         };
 
         // Update vCard link
-        vCardLink.href = `/assets/vcards/${cardName}.vcf`;
+        vCardLink.href = `/v1/assets/vcards/${cardName}.vcf`;
         vCardLink.download = `${cardName.charAt(0).toUpperCase() + cardName.slice(1)}_Card.vcf`;
 
         // Update page title and meta tags
@@ -49,7 +49,7 @@ function initializeCard() {
 
         const personName = cardName.charAt(0).toUpperCase() + cardName.slice(1);
         const cardUrl = `https://troople.be/cards/${cardName}`;
-        const cardImageUrl = customImagePath ? `https://troople.be/${customImagePath}` : `https://troople.be/assets/cards/${cardName}-card.png`;
+        const cardImageUrl = customImagePath ? `https://troople.be/${customImagePath}` : `https://troople.be/v1/assets/cards/${cardName}-card.png`;
         const desc = `${personName}'s digital business card from Troople - AI and Data Science solutions.`;
 
         if (ogTitle) ogTitle.content = `${personName} - Troople Business Card`;
